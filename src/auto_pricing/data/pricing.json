@@ -1,0 +1,385 @@
+{
+  "_notes": "Keys match the custom form's short codes (id-style), not display text. addon_price applies only when paired with another repair at the SAME access_point within the same device type. access_point values are scoped per-device (not compared across device types). Prices unchanged from the last structured pricing pass - only keys were remapped to form codes.",
+  "CLEANING": {
+    "cleanBasic": {
+      "full_price": [
+        20,
+        30
+      ]
+    },
+    "deepClean": {
+      "full_price": [
+        35,
+        50
+      ]
+    },
+    "deepThermalOnly": {
+      "full_price": [
+        35,
+        50
+      ]
+    },
+    "deepFullService": {
+      "full_price": [
+        50,
+        65
+      ]
+    }
+  },
+  "typePhone": {
+    "_variance_warning": "Battery access overlap with screen flips by model generation - see repBattery note. Tag each phone model, don't assume by brand.",
+    "repScreen": {
+      "full_price": [
+        45,
+        70
+      ],
+      "access_point": "front_display"
+    },
+    "repBattery": {
+      "full_price": [
+        35,
+        50
+      ],
+      "access_point": "model_dependent",
+      "addon_price": null,
+      "note": "iPhone pre-14: shares access w/ screen, addon ~$15 if paired. iPhone 14+ & Samsung: opens from back glass, no overlap w/ screen, charge full."
+    },
+    "repChargePort": {
+      "full_price": [
+        40,
+        55
+      ],
+      "access_point": "back_glass_or_bottom_frame"
+    },
+    "repCamera": {
+      "full_price": [
+        35,
+        50
+      ],
+      "access_point": "back_glass"
+    },
+    "repSpeakerMic": {
+      "full_price": [
+        35,
+        50
+      ],
+      "access_point": "bottom_frame"
+    },
+    "repButtonFlex": {
+      "full_price": [
+        40,
+        60
+      ],
+      "access_point": "front_display"
+    },
+    "repSoftware": {
+      "full_price": [
+        30,
+        45
+      ],
+      "access_point": "none",
+      "addon_price": 10,
+      "note": "No teardown - addon if paired with any hardware repair"
+    },
+    "repDataTransfer": {
+      "full_price": [
+        35,
+        50
+      ],
+      "access_point": "none",
+      "addon_price": 15,
+      "note": "No teardown - addon if paired"
+    }
+  },
+  "typeTablet": {
+    "repScreen": {
+      "full_price": [
+        50,
+        80
+      ],
+      "access_point": "front_display"
+    },
+    "repBattery": {
+      "full_price": [
+        40,
+        55
+      ],
+      "access_point": "front_display",
+      "addon_price": 20,
+      "note": "Usually shares front-display access w/ screen"
+    },
+    "repChargePort": {
+      "full_price": [
+        40,
+        55
+      ],
+      "access_point": "front_display",
+      "addon_price": 15
+    },
+    "repCamera": {
+      "full_price": [
+        35,
+        50
+      ],
+      "access_point": "front_display",
+      "addon_price": 15
+    },
+    "repSpeakerMic": {
+      "full_price": [
+        35,
+        50
+      ],
+      "access_point": "front_display",
+      "addon_price": 15
+    },
+    "repBackGlass": {
+      "full_price": [
+        55,
+        80
+      ],
+      "access_point": "rear_housing",
+      "note": "NEEDS TO BE ADDED BACK to repairTablet options in form - dropped by accident"
+    },
+    "repSoftware": {
+      "full_price": [
+        30,
+        45
+      ],
+      "access_point": "none",
+      "addon_price": 10
+    },
+    "repDataTransfer": {
+      "full_price": [
+        35,
+        50
+      ],
+      "access_point": "none",
+      "addon_price": 15
+    }
+  },
+  "typeLaptop": {
+    "_note": "battery/SSD/RAM/fan all live behind the SAME bottom panel - high genuine overlap. Keyboard/trackpad is a separate opening (top palm rest). Screen is a third separate opening (bezel/hinge).",
+    "repScreen": {
+      "full_price": [
+        50,
+        80
+      ],
+      "access_point": "display_bezel_hinge"
+    },
+    "repBattery": {
+      "full_price": [
+        45,
+        70
+      ],
+      "access_point": "bottom_panel",
+      "addon_price": 20
+    },
+    "repKeyboardTrackpad": {
+      "full_price": [
+        45,
+        70
+      ],
+      "access_point": "top_palmrest",
+      "note": "Separate opening from bottom panel on most models - don't auto-discount just because bottom panel was already open. Some models need battery disconnect via bottom panel first - flag for manual review rather than auto-discount."
+    },
+    "repSSD": {
+      "full_price": [
+        40,
+        60
+      ],
+      "access_point": "bottom_panel",
+      "addon_price": 15
+    },
+    "repRAM": {
+      "full_price": [
+        35,
+        55
+      ],
+      "access_point": "bottom_panel",
+      "addon_price": 15
+    },
+    "repFan": {
+      "full_price": [
+        35,
+        55
+      ],
+      "access_point": "bottom_panel",
+      "addon_price": 20
+    },
+    "repOSReinstall": {
+      "full_price": [
+        40,
+        60
+      ],
+      "access_point": "none",
+      "addon_price": 15
+    },
+    "repDCJack": {
+      "full_price": [
+        35,
+        55
+      ],
+      "access_point": "bottom_panel",
+      "addon_price": 20,
+      "note": "Modular only - soldered DC jacks are out of scope (no-soldering policy). Diagnosis must confirm modular before quoting; if soldered, this becomes a decline."
+    }
+  },
+  "typeHomeConsole": {
+    "_note": "Storage, fan, and PSU are all reached by removing the same outer shell/top cover on PS4/Xbox-style consoles. High overlap.",
+    "repStorage": {
+      "full_price": [
+        45,
+        65
+      ],
+      "access_point": "outer_shell"
+    },
+    "repFan": {
+      "full_price": [
+        45,
+        65
+      ],
+      "access_point": "outer_shell",
+      "addon_price": 20
+    },
+    "repPSU": {
+      "full_price": [
+        45,
+        65
+      ],
+      "access_point": "outer_shell",
+      "addon_price": 20
+    },
+    "repSoftware": {
+      "full_price": [
+        35,
+        50
+      ],
+      "access_point": "none",
+      "addon_price": 15
+    }
+  },
+  "typeHandheld": {
+    "_variance_warning": "Teardown difficulty varies wildly by model (Switch vs 3DS vs Steam Deck) - treat access_point as a rough default only.",
+    "repScreen": {
+      "full_price": [
+        55,
+        80
+      ],
+      "access_point": "front_shell"
+    },
+    "repBattery": {
+      "full_price": [
+        40,
+        60
+      ],
+      "access_point": "front_shell",
+      "addon_price": 20
+    },
+    "repChargePort": {
+      "full_price": [
+        40,
+        60
+      ],
+      "access_point": "front_shell",
+      "addon_price": 20
+    },
+    "repJoystickDrift": {
+      "full_price": [
+        35,
+        50
+      ],
+      "access_point": "front_shell",
+      "addon_price": 15
+    },
+    "repButtonFlex": {
+      "full_price": [
+        35,
+        50
+      ],
+      "access_point": "front_shell",
+      "addon_price": 15
+    },
+    "repCardSlot": {
+      "full_price": [
+        35,
+        50
+      ],
+      "access_point": "front_shell",
+      "addon_price": 15
+    },
+    "repFan": {
+      "full_price": [
+        35,
+        50
+      ],
+      "access_point": "front_shell",
+      "addon_price": 15
+    },
+    "repSoftware": {
+      "full_price": [
+        30,
+        45
+      ],
+      "access_point": "none",
+      "addon_price": 10
+    }
+  },
+  "typeController": {
+    "_note": "Nearly everything on a controller is behind one shell-open - high overlap, this category benefits most from add-on discounting.",
+    "repStickDrift": {
+      "full_price": [
+        35,
+        45
+      ],
+      "access_point": "shell"
+    },
+    "repButton": {
+      "full_price": [
+        30,
+        40
+      ],
+      "access_point": "shell",
+      "addon_price": 10
+    },
+    "repTrigger": {
+      "full_price": [
+        30,
+        40
+      ],
+      "access_point": "shell",
+      "addon_price": 10
+    },
+    "repShell": {
+      "full_price": [
+        25,
+        40
+      ],
+      "access_point": "shell",
+      "addon_price": 10
+    },
+    "repBattery": {
+      "full_price": [
+        30,
+        40
+      ],
+      "access_point": "shell",
+      "addon_price": 10
+    },
+    "repChargePort": {
+      "full_price": [
+        35,
+        50
+      ],
+      "access_point": "shell",
+      "addon_price": 15
+    },
+    "repSync": {
+      "full_price": [
+        20,
+        30
+      ],
+      "access_point": "none",
+      "addon_price": 5
+    }
+  }
+}
