@@ -1,0 +1,146 @@
+{
+  "index": 194,
+  "kind": "invalid_single",
+  "field": "modularAck",
+  "expected_status": "error",
+  "passed": true,
+  "reason": "",
+  "response": {
+    "status": "error",
+    "error": {
+      "modularAck": "modularAck does not contain a valid value"
+    }
+  },
+  "payload": {
+    "modularAck": {
+      "question": "Modular / replaceable parts only",
+      "type": "single",
+      "value": "__INVALID_RANDOM_VALUE__",
+      "required": true
+    },
+    "contactName": {
+      "question": "First and last name",
+      "type": "text",
+      "value": "Alex Johnson",
+      "required": true
+    },
+    "contactMethod": {
+      "question": "Preferred contact method",
+      "type": "single",
+      "value": "methodEmail",
+      "required": true
+    },
+    "contactPhone": {
+      "question": "Phone number",
+      "type": "text",
+      "value": "Alex Johnson",
+      "required": true
+    },
+    "contactEmail": {
+      "question": "Email",
+      "type": "text",
+      "value": "Zach Example",
+      "required": true
+    },
+    "deviceType": {
+      "question": "What type of device do you have",
+      "type": "single",
+      "value": "typeLaptop",
+      "required": true
+    },
+    "deviceBrand": {
+      "question": "What is the brand of your device",
+      "type": "text",
+      "value": "Samsung",
+      "required": true
+    },
+    "deviceProduct": {
+      "question": "Product name",
+      "type": "text",
+      "value": "iPhone 13",
+      "required": true
+    },
+    "deviceModel": {
+      "question": "What is the model number of your device (optional)",
+      "type": "text",
+      "value": null,
+      "required": false
+    },
+    "deviceCondition": {
+      "question": "Condition (optional)",
+      "type": "single",
+      "value": null,
+      "required": false
+    },
+    "serviceType": {
+      "question": "Service",
+      "type": "multi",
+      "value": [
+        "svcCleaning",
+        "svcRepair"
+      ],
+      "required": true
+    },
+    "cleaningTier": {
+      "question": "What type of cleaning",
+      "type": "single",
+      "value": null,
+      "required": false
+    },
+    "deepCleanType": {
+      "question": "What type of deep clean",
+      "type": "single",
+      "value": "deepThermalOnly",
+      "required": true
+    },
+    "repairPhone": {
+      "question": "Phone repair services",
+      "type": "multi",
+      "value": [],
+      "required": false
+    },
+    "repairTablet": {
+      "question": "Tablet repair services",
+      "type": "multi",
+      "value": [
+        "repSoftware",
+        "repBattery",
+        "repBackGlass",
+        "repChargePort",
+        "repScreen",
+        "repDataTransfer"
+      ],
+      "required": true
+    },
+    "repairLaptop": {
+      "question": "Laptop repair services",
+      "type": "multi",
+      "value": [],
+      "required": false
+    },
+    "repairHomeConsole": {
+      "question": "Home console repair services",
+      "type": "multi",
+      "value": [
+        "repFan",
+        "repPSU"
+      ],
+      "required": true
+    },
+    "repairHandheld": {
+      "question": "Handheld console repair services",
+      "type": "multi",
+      "value": [],
+      "required": false
+    },
+    "repairController": {
+      "question": "Controller repair services",
+      "type": "multi",
+      "value": [
+        "repSync",
+        "repBattery"
+      ],
+      "required": true
+    }
+  }
+}

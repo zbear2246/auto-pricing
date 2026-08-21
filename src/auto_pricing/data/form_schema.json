@@ -1,0 +1,205 @@
+{
+  "modularAck": {
+    "question": "Modular / replaceable parts only",
+    "type": "single",
+    "options": {
+      "swapAck": "I understand repairs are swap based",
+      "swapUnsure": "unsure - send for review (priced under diagnosis)"
+    },
+    "value": null,
+    "required": true
+  },
+  "contactName": {
+    "question": "First and last name",
+    "type": "text",
+    "value": null,
+    "required": true
+  },
+  "contactMethod": {
+    "question": "Preferred contact method",
+    "type": "single",
+    "options": {
+      "methodEmail": "email",
+      "methodPhone": "phone"
+    },
+    "value": null,
+    "required": true
+  },
+  "contactPhone": {
+    "question": "Phone number",
+    "type": "text",
+    "value": null,
+    "required": true
+  },
+  "contactEmail": {
+    "question": "Email",
+    "type": "text",
+    "value": null,
+    "required": true
+  },
+  "deviceType": {
+    "question": "What type of device do you have",
+    "type": "single",
+    "options": {
+      "typePhone": "Phone",
+      "typeTablet": "Tablet",
+      "typeLaptop": "Laptop",
+      "typeHomeConsole": "Home console",
+      "typeHandheld": "Handheld",
+      "typeController": "Controllers"
+    },
+    "value": null,
+    "required": true
+  },
+  "deviceBrand": {
+    "question": "What is the brand of your device",
+    "type": "text",
+    "value": null,
+    "required": true
+  },
+  "deviceProduct": {
+    "question": "Product name",
+    "type": "text",
+    "value": null,
+    "required": true
+  },
+  "deviceModel": {
+    "question": "What is the model number of your device (optional)",
+    "type": "text",
+    "value": null,
+    "required": false
+  },
+  "deviceCondition": {
+    "question": "Condition (optional)",
+    "type": "single",
+    "options": {
+      "condWorking": "Fully working (no known issues)",
+      "condPartial": "Partially working (boots but has issues)",
+      "condDead": "Does not power on"
+    },
+    "value": null,
+    "required": false
+  },
+  "serviceType": {
+    "question": "Service",
+    "type": "multi",
+    "options": {
+      "svcRepair": "Repair/upgrade",
+      "svcCleaning": "Cleaning"
+    },
+    "value": [],
+    "required": true
+  },
+  "cleaningTier": {
+    "question": "What type of cleaning",
+    "type": "single",
+    "options": {
+      "cleanBasic": "Basic",
+      "cleanDeepThermal": "Deep/thermal"
+    },
+    "value": null,
+    "required": false
+  },
+  "deepCleanType": {
+    "question": "What type of deep clean",
+    "type": "single",
+    "options": {
+      "deepClean": "Deep",
+      "deepThermalOnly": "Thermal paste/pads only",
+      "deepFullService": "Full service clean"
+    },
+    "value": null,
+    "required": false
+  },
+  "repairPhone": {
+    "question": "Phone repair services",
+    "type": "multi",
+    "options": {
+      "repScreen": "Screen replacement",
+      "repBattery": "Battery replacement",
+      "repChargePort": "Charging port replacement (daughter board)",
+      "repCamera": "Camera module replacement",
+      "repSpeakerMic": "Speaker or microphone repair",
+      "repButtonFlex": "Button or flex assembly repair",
+      "repSoftware": "Software repair or factory reset",
+      "repDataTransfer": "Data transfer or setup"
+    },
+    "value": [],
+    "required": false
+  },
+  "repairTablet": {
+    "question": "Tablet repair services",
+    "type": "multi",
+    "options": {
+      "repScreen": "Screen replacement",
+      "repBattery": "Battery replacement",
+      "repChargePort": "Charging port replacement (daughter board)",
+      "repCamera": "Camera module replacement",
+      "repSpeakerMic": "Speaker or microphone repair",
+      "repBackGlass": "Back glass or housing replacement",
+      "repSoftware": "Software repair or factory reset",
+      "repDataTransfer": "Data transfer or setup"
+    },
+    "value": [],
+    "required": false
+  },
+  "repairLaptop": {
+    "question": "Laptop repair services",
+    "type": "multi",
+    "options": {
+      "repScreen": "Screen replacement",
+      "repBattery": "Battery replacement",
+      "repKeyboardTrackpad": "Keyboard or trackpad repair",
+      "repSSD": "SSD upgrade or replacement",
+      "repRAM": "RAM upgrade",
+      "repFan": "Cooling fan replacement",
+      "repOSReinstall": "Operating system reinstall",
+      "repDCJack": "DC jack / charging port repair"
+    },
+    "value": [],
+    "required": false
+  },
+  "repairHomeConsole": {
+    "question": "Home console repair services",
+    "type": "multi",
+    "options": {
+      "repStorage": "Storage upgrade or replacement (if applicable)",
+      "repFan": "Cooling fan replacement",
+      "repPSU": "Power supply replacement (external/internal modular PSU)",
+      "repSoftware": "System software repair / reset"
+    },
+    "value": [],
+    "required": false
+  },
+  "repairHandheld": {
+    "question": "Handheld console repair services",
+    "type": "multi",
+    "options": {
+      "repScreen": "Screen replacement (assembly)",
+      "repBattery": "Battery replacement",
+      "repChargePort": "Charging port replacement",
+      "repJoystickDrift": "Joystick drift repair (internal module)",
+      "repButtonFlex": "Button / flex assembly repair",
+      "repCardSlot": "Game card / SD card slot repair",
+      "repFan": "Cooling fan repair",
+      "repSoftware": "Software reset / recovery"
+    },
+    "value": [],
+    "required": false
+  },
+  "repairController": {
+    "question": "Controller repair services",
+    "type": "multi",
+    "options": {
+      "repStickDrift": "Stick drift repair",
+      "repButton": "Button repair",
+      "repTrigger": "Trigger repair",
+      "repShell": "Shell replacement",
+      "repBattery": "Battery replacement (wireless controllers)",
+      "repChargePort": "Charging port repair (USB-C/micro USB)",
+      "repSync": "Sync / connection issues"
+    },
+    "value": [],
+    "required": false
+  }
+}

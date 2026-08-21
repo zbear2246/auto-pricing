@@ -1,0 +1,147 @@
+{
+  "index": 163,
+  "kind": "required_empty",
+  "field": "repairHandheld",
+  "expected_status": "error",
+  "passed": true,
+  "reason": "",
+  "response": {
+    "status": "error",
+    "error": {
+      "repairHandheld": "repairHandheld must be answered"
+    }
+  },
+  "payload": {
+    "modularAck": {
+      "question": "Modular / replaceable parts only",
+      "type": "single",
+      "value": "swapAck",
+      "required": true
+    },
+    "contactName": {
+      "question": "First and last name",
+      "type": "text",
+      "value": "78bJzrWeP 3DVJa",
+      "required": true
+    },
+    "contactMethod": {
+      "question": "Preferred contact method",
+      "type": "single",
+      "value": "methodEmail",
+      "required": true
+    },
+    "contactPhone": {
+      "question": "Phone number",
+      "type": "text",
+      "value": "Example Device",
+      "required": true
+    },
+    "contactEmail": {
+      "question": "Email",
+      "type": "text",
+      "value": "John Doe",
+      "required": true
+    },
+    "deviceType": {
+      "question": "What type of device do you have",
+      "type": "single",
+      "value": "typeTablet",
+      "required": true
+    },
+    "deviceBrand": {
+      "question": "What is the brand of your device",
+      "type": "text",
+      "value": "Sony",
+      "required": true
+    },
+    "deviceProduct": {
+      "question": "Product name",
+      "type": "text",
+      "value": "Nintendo Switch",
+      "required": true
+    },
+    "deviceModel": {
+      "question": "What is the model number of your device (optional)",
+      "type": "text",
+      "value": null,
+      "required": false
+    },
+    "deviceCondition": {
+      "question": "Condition (optional)",
+      "type": "single",
+      "value": null,
+      "required": false
+    },
+    "serviceType": {
+      "question": "Service",
+      "type": "multi",
+      "value": [
+        "svcRepair",
+        "svcCleaning"
+      ],
+      "required": true
+    },
+    "cleaningTier": {
+      "question": "What type of cleaning",
+      "type": "single",
+      "value": "cleanDeepThermal",
+      "required": true
+    },
+    "deepCleanType": {
+      "question": "What type of deep clean",
+      "type": "single",
+      "value": null,
+      "required": false
+    },
+    "repairPhone": {
+      "question": "Phone repair services",
+      "type": "multi",
+      "value": [
+        "repCamera",
+        "repScreen",
+        "repSpeakerMic",
+        "repSoftware",
+        "repChargePort",
+        "repBattery",
+        "repButtonFlex",
+        "repDataTransfer"
+      ],
+      "required": true
+    },
+    "repairTablet": {
+      "question": "Tablet repair services",
+      "type": "multi",
+      "value": [],
+      "required": false
+    },
+    "repairLaptop": {
+      "question": "Laptop repair services",
+      "type": "multi",
+      "value": [
+        "repDCJack",
+        "repSSD",
+        "repKeyboardTrackpad",
+        "repOSReinstall"
+      ],
+      "required": true
+    },
+    "repairHomeConsole": {
+      "question": "Home console repair services",
+      "type": "multi",
+      "value": [],
+      "required": false
+    },
+    "repairHandheld": {
+      "question": "Handheld console repair services",
+      "type": "multi",
+      "value": [],
+      "required": true
+    },
+    "repairController": {
+      "question": "Controller repair services",
+      "type": "multi",
+      "value": [],
+      "required": false
+    }
+  }
+}

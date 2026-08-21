@@ -1,0 +1,142 @@
+{
+  "index": 356,
+  "kind": "required_false",
+  "field": "contactName",
+  "expected_status": "error",
+  "passed": true,
+  "reason": "",
+  "response": {
+    "status": "error",
+    "error": {
+      "contactName": "contactName is not required when should be"
+    }
+  },
+  "payload": {
+    "modularAck": {
+      "question": "Modular / replaceable parts only",
+      "type": "single",
+      "value": "swapUnsure",
+      "required": true
+    },
+    "contactName": {
+      "question": "First and last name",
+      "type": "text",
+      "value": null,
+      "required": false
+    },
+    "contactMethod": {
+      "question": "Preferred contact method",
+      "type": "single",
+      "value": "methodPhone",
+      "required": true
+    },
+    "contactPhone": {
+      "question": "Phone number",
+      "type": "text",
+      "value": "9HO7 HJLkc88gU_",
+      "required": true
+    },
+    "contactEmail": {
+      "question": "Email",
+      "type": "text",
+      "value": "Acme Repair",
+      "required": true
+    },
+    "deviceType": {
+      "question": "What type of device do you have",
+      "type": "single",
+      "value": "typeLaptop",
+      "required": true
+    },
+    "deviceBrand": {
+      "question": "What is the brand of your device",
+      "type": "text",
+      "value": "Samsung",
+      "required": true
+    },
+    "deviceProduct": {
+      "question": "Product name",
+      "type": "text",
+      "value": "Xbox Series X",
+      "required": true
+    },
+    "deviceModel": {
+      "question": "What is the model number of your device (optional)",
+      "type": "text",
+      "value": null,
+      "required": false
+    },
+    "deviceCondition": {
+      "question": "Condition (optional)",
+      "type": "single",
+      "value": null,
+      "required": false
+    },
+    "serviceType": {
+      "question": "Service",
+      "type": "multi",
+      "value": [
+        "svcCleaning",
+        "svcRepair"
+      ],
+      "required": true
+    },
+    "cleaningTier": {
+      "question": "What type of cleaning",
+      "type": "single",
+      "value": "cleanBasic",
+      "required": true
+    },
+    "deepCleanType": {
+      "question": "What type of deep clean",
+      "type": "single",
+      "value": null,
+      "required": false
+    },
+    "repairPhone": {
+      "question": "Phone repair services",
+      "type": "multi",
+      "value": [],
+      "required": false
+    },
+    "repairTablet": {
+      "question": "Tablet repair services",
+      "type": "multi",
+      "value": [
+        "repBackGlass",
+        "repCamera",
+        "repSoftware",
+        "repDataTransfer",
+        "repScreen"
+      ],
+      "required": true
+    },
+    "repairLaptop": {
+      "question": "Laptop repair services",
+      "type": "multi",
+      "value": [
+        "repSSD",
+        "repKeyboardTrackpad"
+      ],
+      "required": true
+    },
+    "repairHomeConsole": {
+      "question": "Home console repair services",
+      "type": "multi",
+      "value": [],
+      "required": false
+    },
+    "repairHandheld": {
+      "question": "Handheld console repair services",
+      "type": "multi",
+      "value": [],
+      "required": false
+    },
+    "repairController": {
+      "question": "Controller repair services",
+      "type": "multi",
+      "value": [],
+      "required": false
+    }
+  }
+}

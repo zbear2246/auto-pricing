@@ -1,0 +1,147 @@
+{
+  "index": 368,
+  "kind": "normal",
+  "field": "-",
+  "expected_status": "ok",
+  "passed": true,
+  "reason": "",
+  "response": {
+    "status": "ok",
+    "error": {}
+  },
+  "payload": {
+    "modularAck": {
+      "question": "Modular / replaceable parts only",
+      "type": "single",
+      "value": "swapUnsure",
+      "required": true
+    },
+    "contactName": {
+      "question": "First and last name",
+      "type": "text",
+      "value": "Zach Example",
+      "required": true
+    },
+    "contactMethod": {
+      "question": "Preferred contact method",
+      "type": "single",
+      "value": "methodEmail",
+      "required": true
+    },
+    "contactPhone": {
+      "question": "Phone number",
+      "type": "text",
+      "value": "Yc7Bp7HLPf F1U1Wy3BmLA658CkoT",
+      "required": true
+    },
+    "contactEmail": {
+      "question": "Email",
+      "type": "text",
+      "value": "John Doe",
+      "required": true
+    },
+    "deviceType": {
+      "question": "What type of device do you have",
+      "type": "single",
+      "value": "typePhone",
+      "required": true
+    },
+    "deviceBrand": {
+      "question": "What is the brand of your device",
+      "type": "text",
+      "value": "Apple",
+      "required": true
+    },
+    "deviceProduct": {
+      "question": "Product name",
+      "type": "text",
+      "value": "Nintendo Switch",
+      "required": true
+    },
+    "deviceModel": {
+      "question": "What is the model number of your device (optional)",
+      "type": "text",
+      "value": null,
+      "required": false
+    },
+    "deviceCondition": {
+      "question": "Condition (optional)",
+      "type": "single",
+      "value": null,
+      "required": false
+    },
+    "serviceType": {
+      "question": "Service",
+      "type": "multi",
+      "value": [
+        "svcCleaning",
+        "svcRepair"
+      ],
+      "required": true
+    },
+    "cleaningTier": {
+      "question": "What type of cleaning",
+      "type": "single",
+      "value": null,
+      "required": false
+    },
+    "deepCleanType": {
+      "question": "What type of deep clean",
+      "type": "single",
+      "value": null,
+      "required": false
+    },
+    "repairPhone": {
+      "question": "Phone repair services",
+      "type": "multi",
+      "value": [],
+      "required": false
+    },
+    "repairTablet": {
+      "question": "Tablet repair services",
+      "type": "multi",
+      "value": [
+        "repSoftware",
+        "repChargePort",
+        "repBattery",
+        "repCamera",
+        "repBackGlass",
+        "repDataTransfer"
+      ],
+      "required": true
+    },
+    "repairLaptop": {
+      "question": "Laptop repair services",
+      "type": "multi",
+      "value": [
+        "repSSD",
+        "repFan"
+      ],
+      "required": true
+    },
+    "repairHomeConsole": {
+      "question": "Home console repair services",
+      "type": "multi",
+      "value": [],
+      "required": false
+    },
+    "repairHandheld": {
+      "question": "Handheld console repair services",
+      "type": "multi",
+      "value": [],
+      "required": false
+    },
+    "repairController": {
+      "question": "Controller repair services",
+      "type": "multi",
+      "value": [
+        "repStickDrift",
+        "repChargePort",
+        "repBattery",
+        "repSync",
+        "repShell"
+      ],
+      "required": true
+    }
+  }
+}

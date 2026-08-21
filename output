@@ -1,0 +1,999 @@
+--- Random custom-validator test suite ---
+tests=400  valid_ratio=0.50  seed=random
+logging every generated case to: logger/run 14
+
+{'status': 'error', 'error': {'deviceType': 'deviceType does not contain a valid value'}}
+✅ 0001 invalid_single       field=deviceType [0001_PASS_invalid_single.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepFullService', 'repairPhone': [], 'repairTablet': ['repSpeakerMic'], 'repairLaptop': [], 'repairHomeConsole': ['repStorage'], 'repairHandheld': ['repScreen', 'repChargePort', 'repBattery', 'repButtonFlex', 'repFan'], 'repairController': ['repShell', 'repSync', 'repChargePort']}
+✅ 0002 normal               field=- [0002_PASS_normal.json]
+{'status': 'error', 'error': {'modularAck': 'modularAck is not required when should be'}}
+✅ 0003 required_false       field=modularAck [0003_PASS_required_false.json]
+{'status': 'error', 'error': {'deviceProduct': 'deviceProduct is not required when should be'}}
+✅ 0004 required_false       field=deviceProduct [0004_PASS_required_false.json]
+{'status': 'error', 'error': {'repairController': 'repairController does not contain a valid value'}}
+✅ 0005 invalid_multi        field=repairController [0005_PASS_invalid_multi.json]
+{'status': 'error', 'error': {'contactName': 'contactName must be answered'}}
+✅ 0006 required_empty       field=contactName [0006_PASS_required_empty.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepClean', 'repairPhone': ['repSoftware', 'repButtonFlex', 'repDataTransfer', 'repScreen', 'repBattery', 'repCamera', 'repChargePort', 'repSpeakerMic'], 'repairTablet': [], 'repairLaptop': ['repSSD', 'repScreen', 'repDCJack', 'repOSReinstall', 'repKeyboardTrackpad'], 'repairHomeConsole': ['repStorage', 'repPSU'], 'repairHandheld': [], 'repairController': []}
+✅ 0007 normal               field=- [0007_PASS_normal.json]
+{'status': 'error', 'error': {'repairHandheld': 'repairHandheld does not contain a valid value'}}
+✅ 0008 invalid_multi        field=repairHandheld [0008_PASS_invalid_multi.json]
+{'status': 'error', 'error': {'deviceType': 'deviceType does not contain a valid value'}}
+✅ 0009 invalid_single       field=deviceType [0009_PASS_invalid_single.json]
+{'status': 'error', 'error': {'repairHomeConsole': 'repairHomeConsole does not contain a valid value'}}
+✅ 0010 invalid_multi        field=repairHomeConsole [0010_PASS_invalid_multi.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': ['repDataTransfer', 'repSpeakerMic', 'repCamera', 'repSoftware'], 'repairLaptop': ['repKeyboardTrackpad', 'repDCJack', 'repFan', 'repSSD', 'repScreen', 'repRAM'], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0011 normal               field=- [0011_PASS_normal.json]
+{'status': 'error', 'error': {'repairPhone': 'repairPhone must be answered'}}
+✅ 0012 required_empty       field=repairPhone [0012_PASS_required_empty.json]
+{'status': 'error', 'error': {'cleaningTier': 'cleaningTier does not contain a valid value'}}
+✅ 0013 invalid_single       field=cleaningTier [0013_PASS_invalid_single.json]
+{'status': 'error', 'error': {'repairHomeConsole': 'repairHomeConsole does not contain a valid value'}}
+✅ 0014 invalid_multi        field=repairHomeConsole [0014_PASS_invalid_multi.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': ['repBackGlass', 'repSpeakerMic', 'repChargePort', 'repDataTransfer', 'repScreen', 'repSoftware'], 'repairLaptop': [], 'repairHomeConsole': ['repFan'], 'repairHandheld': [], 'repairController': []}
+✅ 0015 normal               field=- [0015_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': ['repDCJack', 'repKeyboardTrackpad', 'repFan'], 'repairHomeConsole': ['repFan', 'repStorage'], 'repairHandheld': [], 'repairController': []}
+✅ 0016 normal               field=- [0016_PASS_normal.json]
+{'status': 'error', 'error': {'repairLaptop': 'repairLaptop cannot be ansered'}}
+✅ 0017 optional_answered    field=repairLaptop [0017_PASS_optional_answered.json]
+{'status': 'error', 'error': {'repairController': 'repairController does not contain a valid value'}}
+✅ 0018 invalid_multi        field=repairController [0018_PASS_invalid_multi.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': 'cleanBasic', 'deepCleanType': 'deepThermalOnly', 'repairPhone': ['repScreen', 'repButtonFlex', 'repSoftware', 'repSpeakerMic'], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0019 normal               field=- [0019_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': ['repPSU', 'repFan', 'repStorage'], 'repairHandheld': ['repScreen', 'repChargePort', 'repBattery', 'repButtonFlex'], 'repairController': []}
+✅ 0020 normal               field=- [0020_PASS_normal.json]
+{'status': 'error', 'error': {'repairPhone': 'repairPhone cannot be ansered'}}
+✅ 0021 optional_answered    field=repairPhone [0021_PASS_optional_answered.json]
+{'status': 'error', 'error': {'deviceProduct': 'deviceProduct must be answered'}}
+✅ 0022 required_empty       field=deviceProduct [0022_PASS_required_empty.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': 'cleanBasic', 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0023 normal               field=- [0023_PASS_normal.json]
+{'status': 'error', 'error': {'contactName': 'contactName is not required when should be'}}
+✅ 0024 required_false       field=contactName [0024_PASS_required_false.json]
+{'status': 'error', 'error': {'contactPhone': 'contactPhone is not required when should be'}}
+✅ 0025 required_false       field=contactPhone [0025_PASS_required_false.json]
+{'status': 'error', 'error': {'contactName': 'contactName is not required when should be'}}
+✅ 0026 required_false       field=contactName [0026_PASS_required_false.json]
+{'status': 'error', 'error': {'contactMethod': 'contactMethod does not contain a valid value'}}
+✅ 0027 invalid_single       field=contactMethod [0027_PASS_invalid_single.json]
+{'status': 'error', 'error': {'cleaningTier': 'cleaningTier does not contain a valid value'}}
+✅ 0028 invalid_single       field=cleaningTier [0028_PASS_invalid_single.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': ['repBattery', 'repButtonFlex', 'repChargePort', 'repCamera', 'repSoftware', 'repDataTransfer', 'repScreen', 'repSpeakerMic'], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0029 normal               field=- [0029_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': ['repBattery'], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': ['repTrigger', 'repStickDrift', 'repSync', 'repBattery', 'repChargePort', 'repShell', 'repButton']}
+✅ 0030 normal               field=- [0030_PASS_normal.json]
+{'status': 'error', 'error': {'modularAck': 'modularAck must be answered'}}
+✅ 0031 required_empty       field=modularAck [0031_PASS_required_empty.json]
+{'status': 'error', 'error': {'repairHandheld': 'repairHandheld cannot be ansered'}}
+✅ 0032 optional_answered    field=repairHandheld [0032_PASS_optional_answered.json]
+{'status': 'error', 'error': {'deviceType': 'deviceType must be answered'}}
+✅ 0033 required_empty       field=deviceType [0033_PASS_required_empty.json]
+{'status': 'error', 'error': {'repairHandheld': 'repairHandheld does not contain a valid value'}}
+✅ 0034 invalid_multi        field=repairHandheld [0034_PASS_invalid_multi.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': ['repScreen', 'repDCJack', 'repOSReinstall', 'repKeyboardTrackpad', 'repFan', 'repBattery'], 'repairHomeConsole': ['repSoftware', 'repFan'], 'repairHandheld': [], 'repairController': []}
+✅ 0035 normal               field=- [0035_PASS_normal.json]
+{'status': 'error', 'error': {'deviceType': 'deviceType must be answered'}}
+✅ 0036 required_empty       field=deviceType [0036_PASS_required_empty.json]
+{'status': 'error', 'error': {'contactMethod': 'contactMethod does not contain a valid value'}}
+✅ 0037 invalid_single       field=contactMethod [0037_PASS_invalid_single.json]
+{'status': 'error', 'error': {'repairTablet': 'repairTablet does not contain a valid value'}}
+✅ 0038 invalid_multi        field=repairTablet [0038_PASS_invalid_multi.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': ['repChargePort'], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': ['repPSU', 'repFan', 'repSoftware'], 'repairHandheld': ['repChargePort', 'repSoftware', 'repFan', 'repJoystickDrift', 'repScreen', 'repButtonFlex'], 'repairController': ['repTrigger', 'repStickDrift']}
+✅ 0039 normal               field=- [0039_PASS_normal.json]
+{'status': 'error', 'error': {'serviceType': 'serviceType does not contain a valid value'}}
+✅ 0040 invalid_multi        field=serviceType [0040_PASS_invalid_multi.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0041 normal               field=- [0041_PASS_normal.json]
+{'status': 'error', 'error': {'repairHandheld': 'repairHandheld must be answered'}}
+✅ 0042 required_empty       field=repairHandheld [0042_PASS_required_empty.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': ['repScreen', 'repFan', 'repSSD', 'repDCJack', 'repBattery', 'repOSReinstall', 'repKeyboardTrackpad', 'repRAM'], 'repairHomeConsole': ['repPSU', 'repStorage'], 'repairHandheld': [], 'repairController': []}
+✅ 0043 normal               field=- [0043_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepThermalOnly', 'repairPhone': [], 'repairTablet': ['repSpeakerMic', 'repDataTransfer', 'repBattery'], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0044 normal               field=- [0044_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepClean', 'repairPhone': ['repScreen', 'repBattery', 'repChargePort'], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': ['repFan', 'repStorage', 'repPSU'], 'repairHandheld': ['repButtonFlex', 'repJoystickDrift', 'repFan'], 'repairController': ['repSync']}
+✅ 0045 normal               field=- [0045_PASS_normal.json]
+{'status': 'error', 'error': {'repairHomeConsole': 'repairHomeConsole must be answered'}}
+✅ 0046 required_empty       field=repairHomeConsole [0046_PASS_required_empty.json]
+{'status': 'error', 'error': {'deepCleanType': 'deepCleanType does not contain a valid value'}}
+✅ 0047 invalid_single       field=deepCleanType [0047_PASS_invalid_single.json]
+{'status': 'error', 'error': {'contactPhone': 'contactPhone is not required when should be'}}
+✅ 0048 required_false       field=contactPhone [0048_PASS_required_false.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepThermalOnly', 'repairPhone': ['repChargePort', 'repSoftware'], 'repairTablet': ['repDataTransfer', 'repSpeakerMic'], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0049 normal               field=- [0049_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': ['repFan'], 'repairHandheld': [], 'repairController': ['repShell', 'repTrigger', 'repButton', 'repBattery']}
+✅ 0050 normal               field=- [0050_PASS_normal.json]
+{'status': 'error', 'error': {'contactName': 'contactName is not required when should be'}}
+✅ 0051 required_false       field=contactName [0051_PASS_required_false.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': ['repScreen', 'repChargePort', 'repSpeakerMic', 'repButtonFlex', 'repBattery', 'repCamera'], 'repairTablet': ['repChargePort', 'repSpeakerMic'], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0052 normal               field=- [0052_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': ['repScreen', 'repChargePort', 'repBackGlass', 'repSoftware', 'repCamera', 'repDataTransfer', 'repBattery', 'repSpeakerMic'], 'repairLaptop': [], 'repairHomeConsole': ['repSoftware', 'repFan'], 'repairHandheld': ['repFan', 'repJoystickDrift'], 'repairController': ['repTrigger', 'repStickDrift', 'repShell', 'repChargePort', 'repSync']}
+✅ 0053 normal               field=- [0053_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': ['repDataTransfer', 'repScreen'], 'repairLaptop': ['repOSReinstall'], 'repairHomeConsole': ['repSoftware', 'repFan', 'repPSU', 'repStorage'], 'repairHandheld': [], 'repairController': []}
+✅ 0054 normal               field=- [0054_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepThermalOnly', 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': ['repButtonFlex', 'repBattery', 'repScreen'], 'repairController': []}
+✅ 0055 normal               field=- [0055_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': ['repStorage', 'repSoftware'], 'repairHandheld': [], 'repairController': []}
+✅ 0056 normal               field=- [0056_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': ['repCamera', 'repChargePort', 'repScreen', 'repDataTransfer', 'repBackGlass', 'repBattery', 'repSpeakerMic', 'repSoftware'], 'repairLaptop': ['repScreen', 'repOSReinstall', 'repSSD', 'repRAM', 'repFan', 'repBattery', 'repKeyboardTrackpad', 'repDCJack'], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0057 normal               field=- [0057_PASS_normal.json]
+{'status': 'error', 'error': {'deepCleanType': 'deepCleanType does not contain a valid value'}}
+✅ 0058 invalid_single       field=deepCleanType [0058_PASS_invalid_single.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepClean', 'repairPhone': [], 'repairTablet': ['repSpeakerMic', 'repBackGlass', 'repCamera', 'repChargePort', 'repScreen', 'repDataTransfer'], 'repairLaptop': [], 'repairHomeConsole': ['repStorage', 'repSoftware', 'repPSU'], 'repairHandheld': [], 'repairController': []}
+✅ 0059 normal               field=- [0059_PASS_normal.json]
+{'status': 'error', 'error': {'contactName': 'contactName must be answered'}}
+✅ 0060 required_empty       field=contactName [0060_PASS_required_empty.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepClean', 'repairPhone': [], 'repairTablet': ['repScreen', 'repSoftware'], 'repairLaptop': [], 'repairHomeConsole': ['repPSU', 'repFan', 'repSoftware'], 'repairHandheld': ['repChargePort', 'repButtonFlex', 'repScreen', 'repCardSlot', 'repSoftware'], 'repairController': []}
+✅ 0061 normal               field=- [0061_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': 'cleanBasic', 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0062 normal               field=- [0062_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepFullService', 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': ['repBattery', 'repChargePort', 'repButton', 'repTrigger', 'repStickDrift', 'repShell', 'repSync']}
+✅ 0063 normal               field=- [0063_PASS_normal.json]
+{'status': 'error', 'error': {'deviceProduct': 'deviceProduct is not required when should be'}}
+✅ 0064 required_false       field=deviceProduct [0064_PASS_required_false.json]
+{'status': 'error', 'error': {'deviceProduct': 'deviceProduct is not required when should be'}}
+✅ 0065 required_false       field=deviceProduct [0065_PASS_required_false.json]
+{'status': 'error', 'error': {'repairHandheld': 'repairHandheld does not contain a valid value'}}
+✅ 0066 invalid_multi        field=repairHandheld [0066_PASS_invalid_multi.json]
+{'status': 'error', 'error': {'deviceType': 'deviceType does not contain a valid value'}}
+✅ 0067 invalid_single       field=deviceType [0067_PASS_invalid_single.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': ['repDataTransfer'], 'repairTablet': [], 'repairLaptop': ['repOSReinstall', 'repSSD', 'repScreen'], 'repairHomeConsole': ['repSoftware', 'repFan'], 'repairHandheld': ['repScreen', 'repButtonFlex', 'repChargePort', 'repSoftware', 'repJoystickDrift', 'repFan'], 'repairController': []}
+✅ 0068 normal               field=- [0068_PASS_normal.json]
+{'status': 'error', 'error': {'deepCleanType': 'deepCleanType does not contain a valid value'}}
+✅ 0069 invalid_single       field=deepCleanType [0069_PASS_invalid_single.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepFullService', 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': ['repJoystickDrift', 'repChargePort', 'repFan', 'repScreen'], 'repairController': []}
+✅ 0070 normal               field=- [0070_PASS_normal.json]
+{'status': 'error', 'error': {'repairTablet': 'repairTablet does not contain a valid value'}}
+✅ 0071 invalid_multi        field=repairTablet [0071_PASS_invalid_multi.json]
+{'status': 'error', 'error': {'repairPhone': 'repairPhone must be answered'}}
+✅ 0072 required_empty       field=repairPhone [0072_PASS_required_empty.json]
+{'status': 'error', 'error': {'serviceType': 'serviceType are not required when should be'}}
+✅ 0073 required_false       field=serviceType [0073_PASS_required_false.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepFullService', 'repairPhone': ['repDataTransfer', 'repButtonFlex'], 'repairTablet': ['repSoftware', 'repSpeakerMic', 'repChargePort', 'repCamera', 'repScreen', 'repBackGlass', 'repDataTransfer'], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': ['repFan', 'repSoftware'], 'repairController': []}
+✅ 0074 normal               field=- [0074_PASS_normal.json]
+{'status': 'error', 'error': {'contactMethod': 'contactMethod does not contain a valid value'}}
+✅ 0075 invalid_single       field=contactMethod [0075_PASS_invalid_single.json]
+{'status': 'error', 'error': {'repairController': 'repairController cannot be ansered'}}
+✅ 0076 optional_answered    field=repairController [0076_PASS_optional_answered.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': 'cleanBasic', 'deepCleanType': 'deepClean', 'repairPhone': [], 'repairTablet': ['repSpeakerMic', 'repDataTransfer', 'repChargePort', 'repBattery', 'repSoftware'], 'repairLaptop': [], 'repairHomeConsole': ['repPSU', 'repFan', 'repStorage'], 'repairHandheld': ['repBattery'], 'repairController': []}
+✅ 0077 normal               field=- [0077_PASS_normal.json]
+{'status': 'error', 'error': {'repairHandheld': 'repairHandheld does not contain a valid value'}}
+✅ 0078 invalid_multi        field=repairHandheld [0078_PASS_invalid_multi.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': ['repFan', 'repStorage', 'repPSU', 'repSoftware'], 'repairHandheld': [], 'repairController': []}
+✅ 0079 normal               field=- [0079_PASS_normal.json]
+{'status': 'error', 'error': {'repairController': 'repairController does not contain a valid value'}}
+✅ 0080 invalid_multi        field=repairController [0080_PASS_invalid_multi.json]
+{'status': 'error', 'error': {'repairController': 'repairController does not contain a valid value'}}
+✅ 0081 invalid_multi        field=repairController [0081_PASS_invalid_multi.json]
+{'status': 'error', 'error': {'cleaningTier': 'cleaningTier does not contain a valid value'}}
+✅ 0082 invalid_single       field=cleaningTier [0082_PASS_invalid_single.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0083 normal               field=- [0083_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepFullService', 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': ['repSync', 'repChargePort', 'repStickDrift', 'repShell']}
+✅ 0084 normal               field=- [0084_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': ['repBattery', 'repKeyboardTrackpad', 'repRAM', 'repOSReinstall', 'repFan', 'repScreen', 'repSSD'], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0085 normal               field=- [0085_PASS_normal.json]
+{'status': 'error', 'error': {'deepCleanType': 'deepCleanType cannot be ansered'}}
+✅ 0086 optional_answered    field=deepCleanType [0086_PASS_optional_answered.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepClean', 'repairPhone': ['repSpeakerMic', 'repChargePort', 'repSoftware', 'repDataTransfer'], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': ['repScreen', 'repBattery', 'repButtonFlex', 'repChargePort', 'repCardSlot'], 'repairController': []}
+✅ 0087 normal               field=- [0087_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': ['repSSD', 'repOSReinstall'], 'repairHomeConsole': [], 'repairHandheld': ['repScreen', 'repFan', 'repButtonFlex', 'repBattery'], 'repairController': ['repChargePort', 'repBattery']}
+✅ 0088 normal               field=- [0088_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': ['repDataTransfer', 'repScreen', 'repSpeakerMic', 'repSoftware', 'repChargePort', 'repCamera', 'repBattery', 'repButtonFlex'], 'repairTablet': ['repSpeakerMic', 'repCamera', 'repBattery', 'repBackGlass', 'repScreen'], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': ['repButton', 'repTrigger']}
+✅ 0089 normal               field=- [0089_PASS_normal.json]
+{'status': 'error', 'error': {'contactMethod': 'contactMethod is not required when should be'}}
+✅ 0090 required_false       field=contactMethod [0090_PASS_required_false.json]
+{'status': 'error', 'error': {'cleaningTier': 'cleaningTier cannot be ansered'}}
+✅ 0091 optional_answered    field=cleaningTier [0091_PASS_optional_answered.json]
+{'status': 'error', 'error': {'repairHandheld': 'repairHandheld must be answered'}}
+✅ 0092 required_empty       field=repairHandheld [0092_PASS_required_empty.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': 'cleanBasic', 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': ['repJoystickDrift', 'repChargePort', 'repScreen', 'repSoftware', 'repFan'], 'repairController': ['repStickDrift', 'repButton']}
+✅ 0093 normal               field=- [0093_PASS_normal.json]
+{'status': 'error', 'error': {'contactName': 'contactName is not required when should be'}}
+✅ 0094 required_false       field=contactName [0094_PASS_required_false.json]
+{'status': 'error', 'error': {'modularAck': 'modularAck must be answered'}}
+✅ 0095 required_empty       field=modularAck [0095_PASS_required_empty.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': ['repDCJack'], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': ['repButton', 'repChargePort', 'repShell', 'repBattery']}
+✅ 0096 normal               field=- [0096_PASS_normal.json]
+{'status': 'error', 'error': {'contactMethod': 'contactMethod must be answered'}}
+✅ 0097 required_empty       field=contactMethod [0097_PASS_required_empty.json]
+{'status': 'error', 'error': {'repairLaptop': 'repairLaptop does not contain a valid value'}}
+✅ 0098 invalid_multi        field=repairLaptop [0098_PASS_invalid_multi.json]
+{'status': 'error', 'error': {'cleaningTier': 'cleaningTier does not contain a valid value'}}
+✅ 0099 invalid_single       field=cleaningTier [0099_PASS_invalid_single.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': 'cleanBasic', 'deepCleanType': 'deepThermalOnly', 'repairPhone': [], 'repairTablet': [], 'repairLaptop': ['repKeyboardTrackpad'], 'repairHomeConsole': [], 'repairHandheld': ['repCardSlot', 'repSoftware', 'repFan', 'repBattery', 'repButtonFlex', 'repScreen', 'repChargePort', 'repJoystickDrift'], 'repairController': []}
+✅ 0100 normal               field=- [0100_PASS_normal.json]
+{'status': 'error', 'error': {'repairLaptop': 'repairLaptop cannot be ansered'}}
+✅ 0101 optional_answered    field=repairLaptop [0101_PASS_optional_answered.json]
+{'status': 'error', 'error': {'deviceProduct': 'deviceProduct is not required when should be'}}
+✅ 0102 required_false       field=deviceProduct [0102_PASS_required_false.json]
+{'status': 'error', 'error': {'repairHomeConsole': 'repairHomeConsole must be answered'}}
+✅ 0103 required_empty       field=repairHomeConsole [0103_PASS_required_empty.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': ['repScreen', 'repSpeakerMic', 'repDataTransfer', 'repCamera', 'repChargePort', 'repBackGlass', 'repBattery', 'repSoftware'], 'repairLaptop': [], 'repairHomeConsole': ['repFan', 'repSoftware', 'repPSU', 'repStorage'], 'repairHandheld': [], 'repairController': ['repButton']}
+✅ 0104 normal               field=- [0104_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': ['repChargePort', 'repSpeakerMic', 'repScreen', 'repSoftware', 'repDataTransfer'], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0105 normal               field=- [0105_PASS_normal.json]
+{'status': 'error', 'error': {'modularAck': 'modularAck is not required when should be'}}
+✅ 0106 required_false       field=modularAck [0106_PASS_required_false.json]
+{'status': 'error', 'error': {'modularAck': 'modularAck is not required when should be'}}
+✅ 0107 required_false       field=modularAck [0107_PASS_required_false.json]
+{'status': 'error', 'error': {'contactName': 'contactName is not required when should be'}}
+✅ 0108 required_false       field=contactName [0108_PASS_required_false.json]
+{'status': 'error', 'error': {'contactEmail': 'contactEmail is not required when should be'}}
+✅ 0109 required_false       field=contactEmail [0109_PASS_required_false.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': 'cleanBasic', 'deepCleanType': None, 'repairPhone': [], 'repairTablet': ['repScreen', 'repCamera', 'repSoftware', 'repBattery', 'repBackGlass', 'repDataTransfer', 'repSpeakerMic', 'repChargePort'], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': ['repTrigger', 'repStickDrift', 'repBattery']}
+✅ 0110 normal               field=- [0110_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': ['repBattery', 'repFan', 'repSoftware', 'repButtonFlex', 'repJoystickDrift'], 'repairController': []}
+✅ 0111 normal               field=- [0111_PASS_normal.json]
+{'status': 'error', 'error': {'repairHandheld': 'repairHandheld does not contain a valid value'}}
+✅ 0112 invalid_multi        field=repairHandheld [0112_PASS_invalid_multi.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': 'cleanBasic', 'deepCleanType': 'deepFullService', 'repairPhone': ['repSoftware'], 'repairTablet': ['repChargePort', 'repCamera', 'repBattery', 'repSoftware', 'repDataTransfer'], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': ['repChargePort', 'repStickDrift', 'repBattery', 'repTrigger', 'repButton']}
+✅ 0113 normal               field=- [0113_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': ['repBattery', 'repSoftware', 'repJoystickDrift', 'repFan', 'repCardSlot'], 'repairController': []}
+✅ 0114 normal               field=- [0114_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': ['repCamera', 'repSoftware', 'repChargePort', 'repBattery', 'repScreen', 'repSpeakerMic'], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0115 normal               field=- [0115_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': ['repCamera'], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': ['repPSU', 'repFan', 'repStorage', 'repSoftware'], 'repairHandheld': [], 'repairController': ['repChargePort', 'repStickDrift', 'repButton', 'repSync', 'repBattery', 'repShell', 'repTrigger']}
+✅ 0116 normal               field=- [0116_PASS_normal.json]
+{'status': 'error', 'error': {'repairHandheld': 'repairHandheld does not contain a valid value'}}
+✅ 0117 invalid_multi        field=repairHandheld [0117_PASS_invalid_multi.json]
+{'status': 'error', 'error': {'deepCleanType': 'deepCleanType cannot be ansered'}}
+✅ 0118 optional_answered    field=deepCleanType [0118_PASS_optional_answered.json]
+{'status': 'error', 'error': {'deviceType': 'deviceType is not required when should be'}}
+✅ 0119 required_false       field=deviceType [0119_PASS_required_false.json]
+{'status': 'error', 'error': {'contactEmail': 'contactEmail must be answered'}}
+✅ 0120 required_empty       field=contactEmail [0120_PASS_required_empty.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': ['repPSU', 'repSoftware', 'repStorage', 'repFan'], 'repairHandheld': ['repScreen', 'repBattery', 'repButtonFlex', 'repCardSlot'], 'repairController': []}
+✅ 0121 normal               field=- [0121_PASS_normal.json]
+{'status': 'error', 'error': {'repairTablet': 'repairTablet must be answered'}}
+✅ 0122 required_empty       field=repairTablet [0122_PASS_required_empty.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': ['repStorage'], 'repairHandheld': [], 'repairController': []}
+✅ 0123 normal               field=- [0123_PASS_normal.json]
+{'status': 'error', 'error': {'contactEmail': 'contactEmail must be answered'}}
+✅ 0124 required_empty       field=contactEmail [0124_PASS_required_empty.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': 'cleanBasic', 'deepCleanType': None, 'repairPhone': ['repDataTransfer', 'repButtonFlex', 'repBattery'], 'repairTablet': [], 'repairLaptop': ['repBattery', 'repFan', 'repDCJack'], 'repairHomeConsole': [], 'repairHandheld': ['repJoystickDrift', 'repBattery'], 'repairController': ['repChargePort', 'repButton', 'repTrigger', 'repShell']}
+✅ 0125 normal               field=- [0125_PASS_normal.json]
+{'status': 'error', 'error': {'repairLaptop': 'repairLaptop does not contain a valid value'}}
+✅ 0126 invalid_multi        field=repairLaptop [0126_PASS_invalid_multi.json]
+{'status': 'error', 'error': {'cleaningTier': 'cleaningTier must be answered'}}
+✅ 0127 required_empty       field=cleaningTier [0127_PASS_required_empty.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': 'cleanBasic', 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': ['repRAM', 'repKeyboardTrackpad'], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': ['repTrigger', 'repShell', 'repStickDrift', 'repButton', 'repBattery', 'repChargePort']}
+✅ 0128 normal               field=- [0128_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepFullService', 'repairPhone': ['repButtonFlex', 'repDataTransfer', 'repChargePort', 'repCamera', 'repScreen', 'repSoftware'], 'repairTablet': ['repDataTransfer', 'repSoftware', 'repScreen'], 'repairLaptop': ['repOSReinstall', 'repDCJack', 'repSSD', 'repScreen', 'repBattery', 'repFan', 'repKeyboardTrackpad', 'repRAM'], 'repairHomeConsole': [], 'repairHandheld': ['repFan', 'repScreen', 'repButtonFlex', 'repSoftware', 'repJoystickDrift'], 'repairController': []}
+✅ 0129 normal               field=- [0129_PASS_normal.json]
+{'status': 'error', 'error': {'deviceType': 'deviceType must be answered'}}
+✅ 0130 required_empty       field=deviceType [0130_PASS_required_empty.json]
+{'status': 'error', 'error': {'contactName': 'contactName must be answered'}}
+✅ 0131 required_empty       field=contactName [0131_PASS_required_empty.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': 'cleanBasic', 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': ['repFan'], 'repairHandheld': [], 'repairController': []}
+✅ 0132 normal               field=- [0132_PASS_normal.json]
+{'status': 'error', 'error': {'cleaningTier': 'cleaningTier must be answered'}}
+✅ 0133 required_empty       field=cleaningTier [0133_PASS_required_empty.json]
+{'status': 'error', 'error': {'repairTablet': 'repairTablet must be answered'}}
+✅ 0134 required_empty       field=repairTablet [0134_PASS_required_empty.json]
+{'status': 'error', 'error': {'cleaningTier': 'cleaningTier does not contain a valid value'}}
+✅ 0135 invalid_single       field=cleaningTier [0135_PASS_invalid_single.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepThermalOnly', 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0136 normal               field=- [0136_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': ['repSoftware', 'repChargePort', 'repJoystickDrift', 'repFan'], 'repairController': ['repButton', 'repBattery', 'repShell']}
+✅ 0137 normal               field=- [0137_PASS_normal.json]
+{'status': 'error', 'error': {'contactPhone': 'contactPhone is not required when should be'}}
+✅ 0138 required_false       field=contactPhone [0138_PASS_required_false.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': ['repButtonFlex', 'repSpeakerMic', 'repDataTransfer', 'repSoftware', 'repCamera', 'repScreen', 'repBattery', 'repChargePort'], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': ['repFan'], 'repairHandheld': [], 'repairController': []}
+✅ 0139 normal               field=- [0139_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': ['repOSReinstall'], 'repairHomeConsole': ['repSoftware'], 'repairHandheld': [], 'repairController': ['repShell']}
+✅ 0140 normal               field=- [0140_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': 'cleanBasic', 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': ['repPSU', 'repStorage'], 'repairHandheld': [], 'repairController': []}
+✅ 0141 normal               field=- [0141_PASS_normal.json]
+{'status': 'error', 'error': {'contactName': 'contactName is not required when should be'}}
+✅ 0142 required_false       field=contactName [0142_PASS_required_false.json]
+{'status': 'error', 'error': {'repairPhone': 'repairPhone does not contain a valid value'}}
+✅ 0143 invalid_multi        field=repairPhone [0143_PASS_invalid_multi.json]
+{'status': 'error', 'error': {'contactEmail': 'contactEmail is not required when should be'}}
+✅ 0144 required_false       field=contactEmail [0144_PASS_required_false.json]
+{'status': 'error', 'error': {'deepCleanType': 'deepCleanType does not contain a valid value'}}
+✅ 0145 invalid_single       field=deepCleanType [0145_PASS_invalid_single.json]
+{'status': 'error', 'error': {'contactEmail': 'contactEmail is not required when should be'}}
+✅ 0146 required_false       field=contactEmail [0146_PASS_required_false.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': ['repDataTransfer'], 'repairTablet': [], 'repairLaptop': ['repKeyboardTrackpad', 'repSSD', 'repRAM'], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0147 normal               field=- [0147_PASS_normal.json]
+{'status': 'error', 'error': {'contactEmail': 'contactEmail must be answered'}}
+✅ 0148 required_empty       field=contactEmail [0148_PASS_required_empty.json]
+{'status': 'error', 'error': {'deviceProduct': 'deviceProduct is not required when should be'}}
+✅ 0149 required_false       field=deviceProduct [0149_PASS_required_false.json]
+{'status': 'error', 'error': {'repairTablet': 'repairTablet cannot be ansered'}}
+✅ 0150 optional_answered    field=repairTablet [0150_PASS_optional_answered.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': ['repBattery', 'repSpeakerMic', 'repScreen', 'repChargePort', 'repButtonFlex'], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': ['repFan', 'repSoftware'], 'repairHandheld': ['repChargePort', 'repSoftware', 'repScreen', 'repJoystickDrift'], 'repairController': []}
+✅ 0151 normal               field=- [0151_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepThermalOnly', 'repairPhone': [], 'repairTablet': ['repSoftware', 'repChargePort', 'repSpeakerMic', 'repBattery', 'repScreen'], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0152 normal               field=- [0152_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': ['repSoftware', 'repCamera', 'repBattery', 'repChargePort', 'repBackGlass', 'repScreen', 'repSpeakerMic'], 'repairLaptop': ['repKeyboardTrackpad', 'repFan', 'repRAM', 'repScreen', 'repDCJack'], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0153 normal               field=- [0153_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': ['repBattery', 'repRAM'], 'repairHomeConsole': ['repStorage', 'repPSU', 'repSoftware'], 'repairHandheld': [], 'repairController': []}
+✅ 0154 normal               field=- [0154_PASS_normal.json]
+{'status': 'error', 'error': {'contactPhone': 'contactPhone must be answered'}}
+✅ 0155 required_empty       field=contactPhone [0155_PASS_required_empty.json]
+{'status': 'error', 'error': {'contactMethod': 'contactMethod does not contain a valid value'}}
+✅ 0156 invalid_single       field=contactMethod [0156_PASS_invalid_single.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': ['repSoftware', 'repButtonFlex', 'repJoystickDrift', 'repChargePort', 'repCardSlot', 'repBattery'], 'repairController': ['repStickDrift', 'repButton', 'repShell', 'repChargePort']}
+✅ 0157 normal               field=- [0157_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': ['repStickDrift', 'repShell', 'repBattery', 'repTrigger', 'repSync', 'repButton', 'repChargePort']}
+✅ 0158 normal               field=- [0158_PASS_normal.json]
+{'status': 'error', 'error': {'deepCleanType': 'deepCleanType must be answered'}}
+✅ 0159 required_empty       field=deepCleanType [0159_PASS_required_empty.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': ['repDataTransfer', 'repSpeakerMic', 'repScreen', 'repCamera', 'repChargePort'], 'repairTablet': ['repBattery', 'repDataTransfer', 'repScreen', 'repCamera', 'repBackGlass', 'repSpeakerMic'], 'repairLaptop': ['repRAM', 'repSSD', 'repFan', 'repOSReinstall', 'repDCJack', 'repKeyboardTrackpad', 'repBattery'], 'repairHomeConsole': ['repSoftware', 'repPSU', 'repFan', 'repStorage'], 'repairHandheld': [], 'repairController': []}
+✅ 0160 normal               field=- [0160_PASS_normal.json]
+{'status': 'error', 'error': {'deviceProduct': 'deviceProduct must be answered'}}
+✅ 0161 required_empty       field=deviceProduct [0161_PASS_required_empty.json]
+{'status': 'error', 'error': {'contactMethod': 'contactMethod does not contain a valid value'}}
+✅ 0162 invalid_single       field=contactMethod [0162_PASS_invalid_single.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': ['repDataTransfer', 'repSoftware', 'repCamera'], 'repairLaptop': [], 'repairHomeConsole': ['repSoftware', 'repStorage'], 'repairHandheld': [], 'repairController': []}
+✅ 0163 normal               field=- [0163_PASS_normal.json]
+{'status': 'error', 'error': {'cleaningTier': 'cleaningTier cannot be ansered'}}
+✅ 0164 optional_answered    field=cleaningTier [0164_PASS_optional_answered.json]
+{'status': 'error', 'error': {'deepCleanType': 'deepCleanType cannot be ansered'}}
+✅ 0165 optional_answered    field=deepCleanType [0165_PASS_optional_answered.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': ['repSoftware', 'repPSU', 'repStorage', 'repFan'], 'repairHandheld': [], 'repairController': []}
+✅ 0166 normal               field=- [0166_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': ['repScreen', 'repSpeakerMic', 'repCamera', 'repChargePort', 'repDataTransfer', 'repButtonFlex'], 'repairTablet': ['repScreen', 'repSoftware', 'repSpeakerMic', 'repDataTransfer', 'repBackGlass'], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': ['repCardSlot', 'repButtonFlex', 'repFan', 'repBattery'], 'repairController': ['repTrigger', 'repSync']}
+✅ 0167 normal               field=- [0167_PASS_normal.json]
+{'status': 'error', 'error': {'deepCleanType': 'deepCleanType does not contain a valid value'}}
+✅ 0168 invalid_single       field=deepCleanType [0168_PASS_invalid_single.json]
+{'status': 'error', 'error': {'contactPhone': 'contactPhone must be answered'}}
+✅ 0169 required_empty       field=contactPhone [0169_PASS_required_empty.json]
+{'status': 'error', 'error': {'deviceProduct': 'deviceProduct is not required when should be'}}
+✅ 0170 required_false       field=deviceProduct [0170_PASS_required_false.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepThermalOnly', 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0171 normal               field=- [0171_PASS_normal.json]
+{'status': 'error', 'error': {'repairLaptop': 'repairLaptop must be answered'}}
+✅ 0172 required_empty       field=repairLaptop [0172_PASS_required_empty.json]
+{'status': 'error', 'error': {'deepCleanType': 'deepCleanType does not contain a valid value'}}
+✅ 0173 invalid_single       field=deepCleanType [0173_PASS_invalid_single.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': ['repScreen', 'repSoftware', 'repChargePort', 'repSpeakerMic', 'repBattery', 'repCamera', 'repButtonFlex', 'repDataTransfer'], 'repairTablet': ['repSpeakerMic', 'repBackGlass', 'repChargePort', 'repScreen'], 'repairLaptop': ['repBattery', 'repKeyboardTrackpad', 'repFan', 'repRAM', 'repScreen', 'repOSReinstall', 'repDCJack', 'repSSD'], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': ['repChargePort', 'repShell', 'repTrigger', 'repBattery', 'repStickDrift', 'repSync', 'repButton']}
+✅ 0174 normal               field=- [0174_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': ['repScreen'], 'repairTablet': [], 'repairLaptop': ['repOSReinstall', 'repRAM', 'repScreen', 'repBattery', 'repKeyboardTrackpad', 'repFan'], 'repairHomeConsole': [], 'repairHandheld': ['repButtonFlex', 'repFan', 'repBattery', 'repScreen', 'repJoystickDrift', 'repChargePort', 'repCardSlot'], 'repairController': []}
+✅ 0175 normal               field=- [0175_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': ['repBattery', 'repChargePort', 'repDataTransfer', 'repSoftware', 'repSpeakerMic', 'repButtonFlex'], 'repairTablet': ['repSoftware', 'repDataTransfer', 'repChargePort', 'repBattery'], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': ['repScreen'], 'repairController': []}
+✅ 0176 normal               field=- [0176_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': ['repBattery', 'repOSReinstall', 'repDCJack', 'repFan'], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0177 normal               field=- [0177_PASS_normal.json]
+{'status': 'error', 'error': {'repairLaptop': 'repairLaptop does not contain a valid value'}}
+✅ 0178 invalid_multi        field=repairLaptop [0178_PASS_invalid_multi.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': ['repBackGlass', 'repDataTransfer', 'repCamera', 'repBattery', 'repSoftware', 'repChargePort', 'repScreen', 'repSpeakerMic'], 'repairLaptop': ['repSSD', 'repFan', 'repBattery', 'repKeyboardTrackpad', 'repOSReinstall'], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0179 normal               field=- [0179_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': 'cleanBasic', 'deepCleanType': None, 'repairPhone': ['repChargePort', 'repSpeakerMic', 'repDataTransfer', 'repCamera', 'repBattery', 'repButtonFlex', 'repSoftware', 'repScreen'], 'repairTablet': ['repScreen', 'repChargePort', 'repBattery', 'repCamera', 'repSoftware'], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0180 normal               field=- [0180_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': ['repChargePort', 'repBattery', 'repSpeakerMic', 'repButtonFlex', 'repCamera'], 'repairTablet': ['repCamera', 'repScreen', 'repSpeakerMic'], 'repairLaptop': [], 'repairHomeConsole': ['repStorage', 'repPSU'], 'repairHandheld': [], 'repairController': []}
+✅ 0181 normal               field=- [0181_PASS_normal.json]
+{'status': 'error', 'error': {'repairTablet': 'repairTablet does not contain a valid value'}}
+✅ 0182 invalid_multi        field=repairTablet [0182_PASS_invalid_multi.json]
+{'status': 'error', 'error': {'repairPhone': 'repairPhone does not contain a valid value'}}
+✅ 0183 invalid_multi        field=repairPhone [0183_PASS_invalid_multi.json]
+{'status': 'error', 'error': {'contactMethod': 'contactMethod does not contain a valid value'}}
+✅ 0184 invalid_single       field=contactMethod [0184_PASS_invalid_single.json]
+{'status': 'error', 'error': {'contactMethod': 'contactMethod is not required when should be'}}
+✅ 0185 required_false       field=contactMethod [0185_PASS_required_false.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepThermalOnly', 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': ['repButton', 'repStickDrift', 'repShell', 'repChargePort']}
+✅ 0186 normal               field=- [0186_PASS_normal.json]
+{'status': 'error', 'error': {'repairTablet': 'repairTablet must be answered'}}
+✅ 0187 required_empty       field=repairTablet [0187_PASS_required_empty.json]
+{'status': 'error', 'error': {'repairTablet': 'repairTablet cannot be ansered'}}
+✅ 0188 optional_answered    field=repairTablet [0188_PASS_optional_answered.json]
+{'status': 'error', 'error': {'repairTablet': 'repairTablet must be answered'}}
+✅ 0189 required_empty       field=repairTablet [0189_PASS_required_empty.json]
+{'status': 'error', 'error': {'deviceType': 'deviceType does not contain a valid value'}}
+✅ 0190 invalid_single       field=deviceType [0190_PASS_invalid_single.json]
+{'status': 'error', 'error': {'deepCleanType': 'deepCleanType must be answered'}}
+✅ 0191 required_empty       field=deepCleanType [0191_PASS_required_empty.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': ['repScreen', 'repCamera', 'repSpeakerMic', 'repBattery', 'repChargePort', 'repSoftware', 'repDataTransfer', 'repButtonFlex'], 'repairTablet': ['repSoftware', 'repScreen', 'repChargePort', 'repSpeakerMic', 'repDataTransfer', 'repBattery'], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0192 normal               field=- [0192_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepThermalOnly', 'repairPhone': [], 'repairTablet': [], 'repairLaptop': ['repFan'], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0193 normal               field=- [0193_PASS_normal.json]
+{'status': 'error', 'error': {'repairController': 'repairController cannot be ansered'}}
+✅ 0194 optional_answered    field=repairController [0194_PASS_optional_answered.json]
+{'status': 'error', 'error': {'repairLaptop': 'repairLaptop must be answered'}}
+✅ 0195 required_empty       field=repairLaptop [0195_PASS_required_empty.json]
+{'status': 'error', 'error': {'repairController': 'repairController cannot be ansered'}}
+✅ 0196 optional_answered    field=repairController [0196_PASS_optional_answered.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepFullService', 'repairPhone': [], 'repairTablet': [], 'repairLaptop': ['repSSD', 'repDCJack'], 'repairHomeConsole': ['repPSU', 'repFan', 'repSoftware', 'repStorage'], 'repairHandheld': [], 'repairController': ['repSync', 'repButton']}
+✅ 0197 normal               field=- [0197_PASS_normal.json]
+{'status': 'error', 'error': {'repairHandheld': 'repairHandheld cannot be ansered'}}
+✅ 0198 optional_answered    field=repairHandheld [0198_PASS_optional_answered.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': ['repDataTransfer'], 'repairLaptop': [], 'repairHomeConsole': ['repFan', 'repPSU', 'repSoftware'], 'repairHandheld': ['repCardSlot', 'repButtonFlex', 'repBattery', 'repFan', 'repJoystickDrift'], 'repairController': []}
+✅ 0199 normal               field=- [0199_PASS_normal.json]
+{'status': 'error', 'error': {'deepCleanType': 'deepCleanType cannot be ansered'}}
+✅ 0200 optional_answered    field=deepCleanType [0200_PASS_optional_answered.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': ['repFan'], 'repairHomeConsole': [], 'repairHandheld': ['repSoftware', 'repJoystickDrift'], 'repairController': ['repButton', 'repShell', 'repSync', 'repBattery', 'repTrigger']}
+✅ 0201 normal               field=- [0201_PASS_normal.json]
+{'status': 'error', 'error': {'contactMethod': 'contactMethod does not contain a valid value'}}
+✅ 0202 invalid_single       field=contactMethod [0202_PASS_invalid_single.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': ['repSoftware', 'repCamera', 'repScreen', 'repBattery', 'repChargePort', 'repSpeakerMic'], 'repairLaptop': ['repOSReinstall'], 'repairHomeConsole': [], 'repairHandheld': ['repSoftware', 'repChargePort', 'repScreen', 'repJoystickDrift', 'repBattery', 'repCardSlot', 'repFan'], 'repairController': ['repButton', 'repTrigger', 'repSync', 'repStickDrift', 'repShell', 'repChargePort', 'repBattery']}
+✅ 0203 normal               field=- [0203_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': ['repCamera', 'repSpeakerMic', 'repBattery'], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0204 normal               field=- [0204_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': ['repBackGlass', 'repSpeakerMic', 'repCamera'], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': ['repBattery', 'repCardSlot'], 'repairController': ['repShell', 'repSync', 'repChargePort', 'repTrigger', 'repButton']}
+✅ 0205 normal               field=- [0205_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0206 normal               field=- [0206_PASS_normal.json]
+{'status': 'error', 'error': {'cleaningTier': 'cleaningTier does not contain a valid value'}}
+✅ 0207 invalid_single       field=cleaningTier [0207_PASS_invalid_single.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepFullService', 'repairPhone': ['repSoftware', 'repChargePort', 'repSpeakerMic', 'repButtonFlex', 'repBattery', 'repDataTransfer', 'repScreen'], 'repairTablet': ['repChargePort'], 'repairLaptop': [], 'repairHomeConsole': ['repStorage', 'repPSU', 'repFan', 'repSoftware'], 'repairHandheld': [], 'repairController': []}
+✅ 0208 normal               field=- [0208_PASS_normal.json]
+{'status': 'error', 'error': {'deviceType': 'deviceType does not contain a valid value'}}
+✅ 0209 invalid_single       field=deviceType [0209_PASS_invalid_single.json]
+{'status': 'error', 'error': {'modularAck': 'modularAck does not contain a valid value'}}
+✅ 0210 invalid_single       field=modularAck [0210_PASS_invalid_single.json]
+{'status': 'error', 'error': {'contactPhone': 'contactPhone must be answered'}}
+✅ 0211 required_empty       field=contactPhone [0211_PASS_required_empty.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': ['repChargePort', 'repBackGlass'], 'repairLaptop': ['repSSD', 'repKeyboardTrackpad', 'repOSReinstall'], 'repairHomeConsole': [], 'repairHandheld': ['repFan', 'repButtonFlex', 'repScreen', 'repChargePort', 'repSoftware', 'repJoystickDrift', 'repCardSlot', 'repBattery'], 'repairController': []}
+✅ 0212 normal               field=- [0212_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': ['repChargePort'], 'repairTablet': ['repSoftware', 'repScreen'], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': ['repButton', 'repStickDrift', 'repSync']}
+✅ 0213 normal               field=- [0213_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': ['repSync', 'repShell']}
+✅ 0214 normal               field=- [0214_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': ['repBattery', 'repSpeakerMic', 'repSoftware', 'repScreen', 'repDataTransfer', 'repChargePort', 'repBackGlass', 'repCamera'], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0215 normal               field=- [0215_PASS_normal.json]
+{'status': 'error', 'error': {'repairHandheld': 'repairHandheld does not contain a valid value'}}
+✅ 0216 invalid_multi        field=repairHandheld [0216_PASS_invalid_multi.json]
+{'status': 'error', 'error': {'repairController': 'repairController must be answered'}}
+✅ 0217 required_empty       field=repairController [0217_PASS_required_empty.json]
+{'status': 'error', 'error': {'deviceType': 'deviceType must be answered'}}
+✅ 0218 required_empty       field=deviceType [0218_PASS_required_empty.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': ['repChargePort', 'repButtonFlex', 'repBattery', 'repScreen', 'repCamera', 'repDataTransfer', 'repSpeakerMic'], 'repairTablet': [], 'repairLaptop': ['repKeyboardTrackpad', 'repOSReinstall', 'repSSD', 'repRAM', 'repDCJack', 'repScreen', 'repFan'], 'repairHomeConsole': ['repFan', 'repSoftware'], 'repairHandheld': [], 'repairController': []}
+✅ 0219 normal               field=- [0219_PASS_normal.json]
+{'status': 'error', 'error': {'modularAck': 'modularAck is not required when should be'}}
+✅ 0220 required_false       field=modularAck [0220_PASS_required_false.json]
+{'status': 'error', 'error': {'contactName': 'contactName must be answered'}}
+✅ 0221 required_empty       field=contactName [0221_PASS_required_empty.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepClean', 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': ['repFan', 'repStorage', 'repSoftware', 'repPSU'], 'repairHandheld': [], 'repairController': []}
+✅ 0222 normal               field=- [0222_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': ['repRAM', 'repKeyboardTrackpad', 'repScreen', 'repOSReinstall', 'repSSD', 'repBattery', 'repFan', 'repDCJack'], 'repairHomeConsole': ['repStorage'], 'repairHandheld': [], 'repairController': []}
+✅ 0223 normal               field=- [0223_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': ['repBattery', 'repButton', 'repTrigger', 'repShell', 'repStickDrift', 'repSync']}
+✅ 0224 normal               field=- [0224_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': 'cleanBasic', 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': ['repStorage', 'repPSU', 'repFan'], 'repairHandheld': ['repBattery', 'repCardSlot', 'repSoftware'], 'repairController': []}
+✅ 0225 normal               field=- [0225_PASS_normal.json]
+{'status': 'error', 'error': {'repairLaptop': 'repairLaptop does not contain a valid value'}}
+✅ 0226 invalid_multi        field=repairLaptop [0226_PASS_invalid_multi.json]
+{'status': 'error', 'error': {'deepCleanType': 'deepCleanType must be answered'}}
+✅ 0227 required_empty       field=deepCleanType [0227_PASS_required_empty.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': ['repCamera', 'repSoftware', 'repBackGlass', 'repChargePort', 'repSpeakerMic', 'repBattery'], 'repairLaptop': ['repOSReinstall', 'repFan', 'repKeyboardTrackpad', 'repScreen', 'repRAM', 'repSSD', 'repDCJack', 'repBattery'], 'repairHomeConsole': ['repStorage', 'repSoftware', 'repFan'], 'repairHandheld': ['repButtonFlex', 'repFan', 'repCardSlot', 'repSoftware', 'repChargePort'], 'repairController': ['repBattery']}
+✅ 0228 normal               field=- [0228_PASS_normal.json]
+{'status': 'error', 'error': {'repairTablet': 'repairTablet cannot be ansered'}}
+✅ 0229 optional_answered    field=repairTablet [0229_PASS_optional_answered.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0230 normal               field=- [0230_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepFullService', 'repairPhone': [], 'repairTablet': ['repBackGlass', 'repDataTransfer', 'repChargePort', 'repBattery', 'repScreen'], 'repairLaptop': [], 'repairHomeConsole': ['repPSU'], 'repairHandheld': [], 'repairController': []}
+✅ 0231 normal               field=- [0231_PASS_normal.json]
+{'status': 'error', 'error': {'deviceProduct': 'deviceProduct is not required when should be'}}
+✅ 0232 required_false       field=deviceProduct [0232_PASS_required_false.json]
+{'status': 'error', 'error': {'serviceType': 'serviceType does not contain a valid value'}}
+✅ 0233 invalid_multi        field=serviceType [0233_PASS_invalid_multi.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': ['repShell', 'repChargePort', 'repBattery']}
+✅ 0234 normal               field=- [0234_PASS_normal.json]
+{'status': 'error', 'error': {'deviceBrand': 'deviceBrand is not required when should be'}}
+✅ 0235 required_false       field=deviceBrand [0235_PASS_required_false.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': ['repDCJack', 'repFan', 'repOSReinstall', 'repKeyboardTrackpad', 'repScreen', 'repSSD', 'repRAM'], 'repairHomeConsole': [], 'repairHandheld': ['repSoftware', 'repBattery', 'repButtonFlex', 'repCardSlot', 'repScreen', 'repJoystickDrift', 'repChargePort'], 'repairController': ['repBattery', 'repShell', 'repButton', 'repStickDrift', 'repSync']}
+✅ 0236 normal               field=- [0236_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': ['repBattery', 'repSpeakerMic', 'repCamera', 'repScreen', 'repSoftware'], 'repairTablet': ['repSpeakerMic', 'repChargePort', 'repDataTransfer', 'repCamera'], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': ['repSoftware', 'repBattery', 'repJoystickDrift', 'repButtonFlex', 'repChargePort', 'repScreen', 'repFan', 'repCardSlot'], 'repairController': []}
+✅ 0237 normal               field=- [0237_PASS_normal.json]
+{'status': 'error', 'error': {'contactMethod': 'contactMethod does not contain a valid value'}}
+✅ 0238 invalid_single       field=contactMethod [0238_PASS_invalid_single.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': ['repSoftware', 'repCamera', 'repBackGlass', 'repChargePort'], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': ['repBattery'], 'repairController': []}
+✅ 0239 normal               field=- [0239_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepThermalOnly', 'repairPhone': [], 'repairTablet': ['repSoftware'], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0240 normal               field=- [0240_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': ['repSoftware', 'repSpeakerMic', 'repBattery', 'repButtonFlex'], 'repairTablet': ['repChargePort', 'repSoftware', 'repCamera', 'repBackGlass', 'repScreen', 'repDataTransfer'], 'repairLaptop': [], 'repairHomeConsole': ['repSoftware'], 'repairHandheld': ['repBattery', 'repChargePort', 'repCardSlot', 'repFan'], 'repairController': []}
+✅ 0241 normal               field=- [0241_PASS_normal.json]
+{'status': 'error', 'error': {'repairHomeConsole': 'repairHomeConsole does not contain a valid value'}}
+✅ 0242 invalid_multi        field=repairHomeConsole [0242_PASS_invalid_multi.json]
+{'status': 'error', 'error': {'serviceType': 'serviceType are not required when should be'}}
+✅ 0243 required_false       field=serviceType [0243_PASS_required_false.json]
+{'status': 'error', 'error': {'contactMethod': 'contactMethod must be answered'}}
+✅ 0244 required_empty       field=contactMethod [0244_PASS_required_empty.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': 'cleanBasic', 'deepCleanType': 'deepFullService', 'repairPhone': [], 'repairTablet': [], 'repairLaptop': ['repSSD', 'repDCJack', 'repBattery', 'repOSReinstall', 'repScreen', 'repKeyboardTrackpad', 'repRAM'], 'repairHomeConsole': [], 'repairHandheld': ['repCardSlot', 'repButtonFlex', 'repChargePort', 'repJoystickDrift', 'repFan', 'repScreen', 'repBattery'], 'repairController': []}
+✅ 0245 normal               field=- [0245_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': ['repSpeakerMic', 'repSoftware'], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': ['repStorage', 'repFan'], 'repairHandheld': [], 'repairController': []}
+✅ 0246 normal               field=- [0246_PASS_normal.json]
+{'status': 'error', 'error': {'repairController': 'repairController does not contain a valid value'}}
+✅ 0247 invalid_multi        field=repairController [0247_PASS_invalid_multi.json]
+{'status': 'error', 'error': {'repairPhone': 'repairPhone cannot be ansered'}}
+✅ 0248 optional_answered    field=repairPhone [0248_PASS_optional_answered.json]
+{'status': 'error', 'error': {'contactMethod': 'contactMethod does not contain a valid value'}}
+✅ 0249 invalid_single       field=contactMethod [0249_PASS_invalid_single.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': ['repSpeakerMic', 'repCamera', 'repSoftware', 'repDataTransfer', 'repChargePort', 'repBattery', 'repBackGlass', 'repScreen'], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0250 normal               field=- [0250_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': 'cleanBasic', 'deepCleanType': None, 'repairPhone': ['repSoftware', 'repButtonFlex', 'repDataTransfer', 'repBattery', 'repCamera', 'repScreen'], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0251 normal               field=- [0251_PASS_normal.json]
+{'status': 'error', 'error': {'repairHandheld': 'repairHandheld must be answered'}}
+✅ 0252 required_empty       field=repairHandheld [0252_PASS_required_empty.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepThermalOnly', 'repairPhone': [], 'repairTablet': [], 'repairLaptop': ['repDCJack'], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0253 normal               field=- [0253_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': ['repBattery', 'repButtonFlex', 'repDataTransfer'], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0254 normal               field=- [0254_PASS_normal.json]
+{'status': 'error', 'error': {'repairHomeConsole': 'repairHomeConsole does not contain a valid value'}}
+✅ 0255 invalid_multi        field=repairHomeConsole [0255_PASS_invalid_multi.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': ['repDataTransfer', 'repSpeakerMic', 'repCamera', 'repSoftware'], 'repairLaptop': ['repSSD', 'repScreen'], 'repairHomeConsole': ['repSoftware', 'repStorage', 'repPSU'], 'repairHandheld': [], 'repairController': []}
+✅ 0256 normal               field=- [0256_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepThermalOnly', 'repairPhone': [], 'repairTablet': ['repDataTransfer', 'repSpeakerMic', 'repSoftware', 'repBattery', 'repScreen', 'repChargePort', 'repBackGlass'], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': ['repChargePort', 'repStickDrift', 'repSync', 'repBattery']}
+✅ 0257 normal               field=- [0257_PASS_normal.json]
+{'status': 'error', 'error': {'repairPhone': 'repairPhone does not contain a valid value'}}
+✅ 0258 invalid_multi        field=repairPhone [0258_PASS_invalid_multi.json]
+{'status': 'error', 'error': {'repairHomeConsole': 'repairHomeConsole cannot be ansered'}}
+✅ 0259 optional_answered    field=repairHomeConsole [0259_PASS_optional_answered.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepThermalOnly', 'repairPhone': [], 'repairTablet': ['repChargePort', 'repSoftware', 'repDataTransfer', 'repCamera', 'repScreen'], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': ['repButtonFlex', 'repFan', 'repCardSlot', 'repBattery'], 'repairController': ['repSync', 'repTrigger', 'repChargePort', 'repShell', 'repStickDrift', 'repButton', 'repBattery']}
+✅ 0260 normal               field=- [0260_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': 'cleanBasic', 'deepCleanType': 'deepFullService', 'repairPhone': [], 'repairTablet': ['repCamera', 'repScreen', 'repSoftware', 'repBackGlass', 'repBattery', 'repDataTransfer', 'repSpeakerMic', 'repChargePort'], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': ['repSync', 'repButton', 'repStickDrift']}
+✅ 0261 normal               field=- [0261_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': ['repScreen', 'repFan', 'repBattery', 'repDCJack', 'repKeyboardTrackpad', 'repRAM', 'repSSD'], 'repairHomeConsole': ['repSoftware', 'repPSU'], 'repairHandheld': [], 'repairController': []}
+✅ 0262 normal               field=- [0262_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': 'cleanBasic', 'deepCleanType': None, 'repairPhone': [], 'repairTablet': ['repCamera'], 'repairLaptop': [], 'repairHomeConsole': ['repPSU'], 'repairHandheld': [], 'repairController': []}
+✅ 0263 normal               field=- [0263_PASS_normal.json]
+{'status': 'error', 'error': {'repairLaptop': 'repairLaptop must be answered'}}
+✅ 0264 required_empty       field=repairLaptop [0264_PASS_required_empty.json]
+{'status': 'error', 'error': {'repairHandheld': 'repairHandheld does not contain a valid value'}}
+✅ 0265 invalid_multi        field=repairHandheld [0265_PASS_invalid_multi.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': 'cleanBasic', 'deepCleanType': None, 'repairPhone': ['repCamera'], 'repairTablet': ['repScreen'], 'repairLaptop': [], 'repairHomeConsole': ['repPSU', 'repStorage', 'repFan'], 'repairHandheld': [], 'repairController': []}
+✅ 0266 normal               field=- [0266_PASS_normal.json]
+{'status': 'error', 'error': {'repairHandheld': 'repairHandheld cannot be ansered'}}
+✅ 0267 optional_answered    field=repairHandheld [0267_PASS_optional_answered.json]
+{'status': 'error', 'error': {'deviceProduct': 'deviceProduct is not required when should be'}}
+✅ 0268 required_false       field=deviceProduct [0268_PASS_required_false.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': ['repScreen', 'repButtonFlex', 'repSpeakerMic', 'repBattery', 'repChargePort', 'repCamera'], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': ['repChargePort', 'repTrigger', 'repButton']}
+✅ 0269 normal               field=- [0269_PASS_normal.json]
+{'status': 'error', 'error': {'repairController': 'repairController does not contain a valid value'}}
+✅ 0270 invalid_multi        field=repairController [0270_PASS_invalid_multi.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': ['repBattery', 'repScreen', 'repFan', 'repOSReinstall', 'repSSD', 'repRAM'], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0271 normal               field=- [0271_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': ['repScreen', 'repChargePort', 'repSoftware', 'repBackGlass', 'repSpeakerMic', 'repDataTransfer'], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0272 normal               field=- [0272_PASS_normal.json]
+{'status': 'error', 'error': {'deepCleanType': 'deepCleanType must be answered'}}
+✅ 0273 required_empty       field=deepCleanType [0273_PASS_required_empty.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0274 normal               field=- [0274_PASS_normal.json]
+{'status': 'error', 'error': {'repairLaptop': 'repairLaptop cannot be ansered'}}
+✅ 0275 optional_answered    field=repairLaptop [0275_PASS_optional_answered.json]
+{'status': 'error', 'error': {'serviceType': 'serviceType does not contain a valid value'}}
+✅ 0276 invalid_multi        field=serviceType [0276_PASS_invalid_multi.json]
+{'status': 'error', 'error': {'contactPhone': 'contactPhone is not required when should be'}}
+✅ 0277 required_false       field=contactPhone [0277_PASS_required_false.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': ['repScreen', 'repFan', 'repDCJack', 'repKeyboardTrackpad'], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': ['repChargePort', 'repButton', 'repShell', 'repBattery', 'repSync', 'repTrigger', 'repStickDrift']}
+✅ 0278 normal               field=- [0278_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': ['repCamera', 'repBattery', 'repDataTransfer'], 'repairTablet': [], 'repairLaptop': ['repFan', 'repRAM'], 'repairHomeConsole': [], 'repairHandheld': ['repFan', 'repChargePort', 'repScreen', 'repJoystickDrift'], 'repairController': []}
+✅ 0279 normal               field=- [0279_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': 'cleanBasic', 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': ['repSoftware', 'repFan'], 'repairHandheld': [], 'repairController': []}
+✅ 0280 normal               field=- [0280_PASS_normal.json]
+{'status': 'error', 'error': {'deviceProduct': 'deviceProduct must be answered'}}
+✅ 0281 required_empty       field=deviceProduct [0281_PASS_required_empty.json]
+{'status': 'error', 'error': {'repairHandheld': 'repairHandheld does not contain a valid value'}}
+✅ 0282 invalid_multi        field=repairHandheld [0282_PASS_invalid_multi.json]
+{'status': 'error', 'error': {'repairLaptop': 'repairLaptop does not contain a valid value'}}
+✅ 0283 invalid_multi        field=repairLaptop [0283_PASS_invalid_multi.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': ['repDataTransfer', 'repCamera', 'repScreen', 'repSpeakerMic', 'repChargePort', 'repBackGlass', 'repSoftware', 'repBattery'], 'repairLaptop': ['repKeyboardTrackpad'], 'repairHomeConsole': ['repStorage', 'repFan'], 'repairHandheld': ['repBattery', 'repCardSlot', 'repButtonFlex', 'repFan'], 'repairController': ['repSync', 'repShell', 'repBattery', 'repButton', 'repStickDrift', 'repChargePort', 'repTrigger']}
+✅ 0284 normal               field=- [0284_PASS_normal.json]
+{'status': 'error', 'error': {'repairLaptop': 'repairLaptop does not contain a valid value'}}
+✅ 0285 invalid_multi        field=repairLaptop [0285_PASS_invalid_multi.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': 'cleanBasic', 'deepCleanType': 'deepThermalOnly', 'repairPhone': [], 'repairTablet': [], 'repairLaptop': ['repFan', 'repBattery', 'repSSD', 'repOSReinstall', 'repScreen'], 'repairHomeConsole': ['repFan', 'repSoftware'], 'repairHandheld': ['repFan'], 'repairController': []}
+✅ 0286 normal               field=- [0286_PASS_normal.json]
+{'status': 'error', 'error': {'repairController': 'repairController does not contain a valid value'}}
+✅ 0287 invalid_multi        field=repairController [0287_PASS_invalid_multi.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepClean', 'repairPhone': [], 'repairTablet': [], 'repairLaptop': ['repRAM', 'repSSD', 'repKeyboardTrackpad', 'repScreen', 'repFan', 'repDCJack'], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0288 normal               field=- [0288_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepThermalOnly', 'repairPhone': [], 'repairTablet': ['repCamera', 'repScreen', 'repDataTransfer'], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': ['repChargePort', 'repButtonFlex', 'repJoystickDrift'], 'repairController': []}
+✅ 0289 normal               field=- [0289_PASS_normal.json]
+{'status': 'error', 'error': {'deviceType': 'deviceType does not contain a valid value'}}
+✅ 0290 invalid_single       field=deviceType [0290_PASS_invalid_single.json]
+{'status': 'error', 'error': {'repairTablet': 'repairTablet cannot be ansered'}}
+✅ 0291 optional_answered    field=repairTablet [0291_PASS_optional_answered.json]
+{'status': 'error', 'error': {'repairTablet': 'repairTablet must be answered'}}
+✅ 0292 required_empty       field=repairTablet [0292_PASS_required_empty.json]
+{'status': 'error', 'error': {'repairHomeConsole': 'repairHomeConsole does not contain a valid value'}}
+✅ 0293 invalid_multi        field=repairHomeConsole [0293_PASS_invalid_multi.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepClean', 'repairPhone': [], 'repairTablet': ['repScreen', 'repChargePort', 'repBackGlass', 'repCamera', 'repSoftware', 'repDataTransfer', 'repBattery', 'repSpeakerMic'], 'repairLaptop': ['repDCJack', 'repScreen', 'repKeyboardTrackpad', 'repRAM', 'repSSD', 'repFan', 'repBattery', 'repOSReinstall'], 'repairHomeConsole': ['repPSU', 'repSoftware', 'repFan', 'repStorage'], 'repairHandheld': [], 'repairController': ['repChargePort', 'repShell', 'repBattery', 'repSync', 'repButton', 'repStickDrift']}
+✅ 0294 normal               field=- [0294_PASS_normal.json]
+{'status': 'error', 'error': {'modularAck': 'modularAck must be answered'}}
+✅ 0295 required_empty       field=modularAck [0295_PASS_required_empty.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0296 normal               field=- [0296_PASS_normal.json]
+{'status': 'error', 'error': {'deviceType': 'deviceType is not required when should be'}}
+✅ 0297 required_false       field=deviceType [0297_PASS_required_false.json]
+{'status': 'error', 'error': {'contactMethod': 'contactMethod does not contain a valid value'}}
+✅ 0298 invalid_single       field=contactMethod [0298_PASS_invalid_single.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepClean', 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': ['repSoftware', 'repFan'], 'repairHandheld': [], 'repairController': []}
+✅ 0299 normal               field=- [0299_PASS_normal.json]
+{'status': 'error', 'error': {'serviceType': 'serviceType are not required when should be'}}
+✅ 0300 required_false       field=serviceType [0300_PASS_required_false.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': ['repSoftware', 'repCamera', 'repSpeakerMic', 'repChargePort', 'repDataTransfer', 'repScreen', 'repButtonFlex', 'repBattery'], 'repairTablet': [], 'repairLaptop': ['repRAM', 'repFan', 'repScreen', 'repDCJack', 'repOSReinstall', 'repKeyboardTrackpad'], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0301 normal               field=- [0301_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': ['repCamera', 'repBattery', 'repSpeakerMic'], 'repairTablet': [], 'repairLaptop': ['repRAM', 'repKeyboardTrackpad'], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0302 normal               field=- [0302_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': ['repChargePort', 'repScreen', 'repDataTransfer', 'repCamera', 'repBattery'], 'repairLaptop': ['repRAM', 'repBattery', 'repDCJack', 'repScreen', 'repSSD', 'repFan', 'repOSReinstall', 'repKeyboardTrackpad'], 'repairHomeConsole': [], 'repairHandheld': ['repChargePort', 'repSoftware', 'repCardSlot', 'repButtonFlex', 'repScreen', 'repBattery', 'repFan', 'repJoystickDrift'], 'repairController': []}
+✅ 0303 normal               field=- [0303_PASS_normal.json]
+{'status': 'error', 'error': {'modularAck': 'modularAck must be answered'}}
+✅ 0304 required_empty       field=modularAck [0304_PASS_required_empty.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepClean', 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': ['repFan', 'repStorage'], 'repairHandheld': [], 'repairController': []}
+✅ 0305 normal               field=- [0305_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': ['repOSReinstall', 'repBattery', 'repKeyboardTrackpad', 'repFan', 'repSSD', 'repScreen', 'repDCJack', 'repRAM'], 'repairHomeConsole': [], 'repairHandheld': ['repCardSlot', 'repFan', 'repBattery', 'repJoystickDrift', 'repButtonFlex', 'repScreen'], 'repairController': []}
+✅ 0306 normal               field=- [0306_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': 'cleanBasic', 'deepCleanType': 'deepThermalOnly', 'repairPhone': [], 'repairTablet': ['repBattery'], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0307 normal               field=- [0307_PASS_normal.json]
+{'status': 'error', 'error': {'serviceType': 'serviceType does not contain a valid value'}}
+✅ 0308 invalid_multi        field=serviceType [0308_PASS_invalid_multi.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepThermalOnly', 'repairPhone': [], 'repairTablet': ['repSpeakerMic', 'repDataTransfer', 'repChargePort', 'repCamera', 'repBackGlass'], 'repairLaptop': [], 'repairHomeConsole': ['repFan', 'repPSU', 'repSoftware'], 'repairHandheld': [], 'repairController': ['repButton']}
+✅ 0309 normal               field=- [0309_PASS_normal.json]
+{'status': 'error', 'error': {'deviceType': 'deviceType does not contain a valid value'}}
+✅ 0310 invalid_single       field=deviceType [0310_PASS_invalid_single.json]
+{'status': 'error', 'error': {'repairHomeConsole': 'repairHomeConsole must be answered'}}
+✅ 0311 required_empty       field=repairHomeConsole [0311_PASS_required_empty.json]
+{'status': 'error', 'error': {'contactMethod': 'contactMethod does not contain a valid value'}}
+✅ 0312 invalid_single       field=contactMethod [0312_PASS_invalid_single.json]
+{'status': 'error', 'error': {'repairPhone': 'repairPhone cannot be ansered'}}
+✅ 0313 optional_answered    field=repairPhone [0313_PASS_optional_answered.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepClean', 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0314 normal               field=- [0314_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepClean', 'repairPhone': [], 'repairTablet': [], 'repairLaptop': ['repFan', 'repScreen', 'repSSD', 'repDCJack', 'repBattery', 'repOSReinstall'], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0315 normal               field=- [0315_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepFullService', 'repairPhone': [], 'repairTablet': ['repSoftware', 'repBackGlass', 'repBattery', 'repCamera', 'repChargePort', 'repScreen', 'repSpeakerMic', 'repDataTransfer'], 'repairLaptop': [], 'repairHomeConsole': ['repFan', 'repSoftware'], 'repairHandheld': [], 'repairController': []}
+✅ 0316 normal               field=- [0316_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0317 normal               field=- [0317_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepClean', 'repairPhone': [], 'repairTablet': ['repCamera', 'repScreen', 'repSpeakerMic', 'repSoftware', 'repDataTransfer'], 'repairLaptop': [], 'repairHomeConsole': ['repPSU', 'repFan', 'repSoftware', 'repStorage'], 'repairHandheld': ['repCardSlot', 'repBattery', 'repJoystickDrift', 'repScreen'], 'repairController': []}
+✅ 0318 normal               field=- [0318_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': 'cleanBasic', 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': ['repSoftware', 'repFan', 'repButtonFlex', 'repCardSlot', 'repChargePort', 'repScreen', 'repJoystickDrift'], 'repairController': []}
+✅ 0319 normal               field=- [0319_PASS_normal.json]
+{'status': 'error', 'error': {'contactName': 'contactName is not required when should be'}}
+✅ 0320 required_false       field=contactName [0320_PASS_required_false.json]
+{'status': 'error', 'error': {'contactEmail': 'contactEmail is not required when should be'}}
+✅ 0321 required_false       field=contactEmail [0321_PASS_required_false.json]
+{'status': 'error', 'error': {'repairLaptop': 'repairLaptop cannot be ansered'}}
+✅ 0322 optional_answered    field=repairLaptop [0322_PASS_optional_answered.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': ['repSoftware', 'repFan'], 'repairHandheld': ['repBattery', 'repButtonFlex', 'repJoystickDrift', 'repChargePort'], 'repairController': []}
+✅ 0323 normal               field=- [0323_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': ['repButtonFlex', 'repDataTransfer', 'repChargePort'], 'repairTablet': [], 'repairLaptop': ['repKeyboardTrackpad', 'repDCJack', 'repBattery', 'repSSD', 'repFan', 'repRAM', 'repOSReinstall'], 'repairHomeConsole': ['repFan', 'repSoftware'], 'repairHandheld': ['repFan', 'repScreen', 'repCardSlot', 'repSoftware', 'repButtonFlex', 'repJoystickDrift', 'repChargePort'], 'repairController': []}
+✅ 0324 normal               field=- [0324_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': ['repCamera', 'repBackGlass'], 'repairLaptop': [], 'repairHomeConsole': ['repPSU', 'repSoftware', 'repStorage'], 'repairHandheld': ['repCardSlot', 'repChargePort', 'repScreen', 'repSoftware', 'repJoystickDrift'], 'repairController': []}
+✅ 0325 normal               field=- [0325_PASS_normal.json]
+{'status': 'error', 'error': {'repairHandheld': 'repairHandheld cannot be ansered'}}
+✅ 0326 optional_answered    field=repairHandheld [0326_PASS_optional_answered.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': ['repCamera', 'repSpeakerMic'], 'repairLaptop': ['repOSReinstall'], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0327 normal               field=- [0327_PASS_normal.json]
+{'status': 'error', 'error': {'serviceType': 'serviceType are not required when should be'}}
+✅ 0328 required_false       field=serviceType [0328_PASS_required_false.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepThermalOnly', 'repairPhone': ['repDataTransfer', 'repChargePort', 'repCamera', 'repBattery', 'repScreen', 'repSoftware', 'repSpeakerMic'], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': ['repScreen', 'repJoystickDrift', 'repBattery', 'repSoftware', 'repFan', 'repButtonFlex', 'repCardSlot', 'repChargePort'], 'repairController': []}
+✅ 0329 normal               field=- [0329_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': 'cleanBasic', 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': ['repJoystickDrift', 'repCardSlot', 'repFan', 'repSoftware', 'repButtonFlex'], 'repairController': ['repTrigger', 'repBattery', 'repShell', 'repStickDrift', 'repChargePort', 'repSync', 'repButton']}
+✅ 0330 normal               field=- [0330_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': 'cleanBasic', 'deepCleanType': 'deepClean', 'repairPhone': [], 'repairTablet': ['repScreen', 'repBattery', 'repDataTransfer', 'repBackGlass', 'repCamera', 'repChargePort'], 'repairLaptop': ['repBattery', 'repScreen', 'repSSD', 'repKeyboardTrackpad', 'repRAM', 'repFan', 'repDCJack'], 'repairHomeConsole': ['repFan', 'repStorage'], 'repairHandheld': ['repButtonFlex'], 'repairController': []}
+✅ 0331 normal               field=- [0331_PASS_normal.json]
+{'status': 'error', 'error': {'deviceProduct': 'deviceProduct is not required when should be'}}
+✅ 0332 required_false       field=deviceProduct [0332_PASS_required_false.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepClean', 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0333 normal               field=- [0333_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepFullService', 'repairPhone': ['repScreen', 'repChargePort', 'repDataTransfer'], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': ['repFan', 'repStorage', 'repPSU', 'repSoftware'], 'repairHandheld': ['repJoystickDrift', 'repCardSlot', 'repScreen', 'repFan', 'repBattery', 'repSoftware'], 'repairController': []}
+✅ 0334 normal               field=- [0334_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': ['repFan', 'repSoftware'], 'repairHandheld': ['repCardSlot', 'repFan', 'repJoystickDrift', 'repButtonFlex', 'repScreen'], 'repairController': ['repSync', 'repStickDrift']}
+✅ 0335 normal               field=- [0335_PASS_normal.json]
+{'status': 'error', 'error': {'contactMethod': 'contactMethod must be answered'}}
+✅ 0336 required_empty       field=contactMethod [0336_PASS_required_empty.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': ['repSoftware', 'repScreen', 'repChargePort', 'repBackGlass', 'repBattery', 'repCamera', 'repDataTransfer', 'repSpeakerMic'], 'repairLaptop': [], 'repairHomeConsole': ['repSoftware', 'repStorage', 'repPSU', 'repFan'], 'repairHandheld': [], 'repairController': ['repShell', 'repSync']}
+✅ 0337 normal               field=- [0337_PASS_normal.json]
+{'status': 'error', 'error': {'deviceType': 'deviceType must be answered'}}
+✅ 0338 required_empty       field=deviceType [0338_PASS_required_empty.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepFullService', 'repairPhone': [], 'repairTablet': ['repSpeakerMic', 'repCamera', 'repSoftware', 'repScreen', 'repDataTransfer', 'repChargePort', 'repBattery'], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': ['repScreen'], 'repairController': []}
+✅ 0339 normal               field=- [0339_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': 'cleanBasic', 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': ['repBattery', 'repTrigger']}
+✅ 0340 normal               field=- [0340_PASS_normal.json]
+{'status': 'error', 'error': {'contactPhone': 'contactPhone is not required when should be'}}
+✅ 0341 required_false       field=contactPhone [0341_PASS_required_false.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': 'cleanBasic', 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': ['repStorage', 'repPSU', 'repSoftware', 'repFan'], 'repairHandheld': ['repSoftware', 'repCardSlot', 'repChargePort', 'repFan', 'repButtonFlex', 'repScreen', 'repBattery'], 'repairController': []}
+✅ 0342 normal               field=- [0342_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': ['repSoftware', 'repButtonFlex', 'repDataTransfer'], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': ['repChargePort', 'repJoystickDrift', 'repScreen', 'repSoftware', 'repButtonFlex', 'repCardSlot', 'repFan', 'repBattery'], 'repairController': []}
+✅ 0343 normal               field=- [0343_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepThermalOnly', 'repairPhone': ['repChargePort'], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': ['repBattery', 'repTrigger', 'repShell']}
+✅ 0344 normal               field=- [0344_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepThermalOnly', 'repairPhone': ['repSoftware', 'repSpeakerMic', 'repCamera', 'repButtonFlex', 'repBattery', 'repDataTransfer', 'repChargePort', 'repScreen'], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': ['repScreen', 'repFan', 'repJoystickDrift', 'repBattery', 'repSoftware', 'repButtonFlex', 'repChargePort'], 'repairController': ['repBattery', 'repButton']}
+✅ 0345 normal               field=- [0345_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': ['repSoftware', 'repDataTransfer', 'repCamera'], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0346 normal               field=- [0346_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': ['repCamera', 'repDataTransfer', 'repSoftware', 'repSpeakerMic', 'repButtonFlex', 'repBattery'], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0347 normal               field=- [0347_PASS_normal.json]
+{'status': 'error', 'error': {'repairPhone': 'repairPhone does not contain a valid value'}}
+✅ 0348 invalid_multi        field=repairPhone [0348_PASS_invalid_multi.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': ['repBattery', 'repButtonFlex', 'repCamera'], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': ['repScreen'], 'repairController': ['repTrigger', 'repStickDrift', 'repButton']}
+✅ 0349 normal               field=- [0349_PASS_normal.json]
+{'status': 'error', 'error': {'repairController': 'repairController cannot be ansered'}}
+✅ 0350 optional_answered    field=repairController [0350_PASS_optional_answered.json]
+{'status': 'error', 'error': {'cleaningTier': 'cleaningTier does not contain a valid value'}}
+✅ 0351 invalid_single       field=cleaningTier [0351_PASS_invalid_single.json]
+{'status': 'error', 'error': {'repairHomeConsole': 'repairHomeConsole cannot be ansered'}}
+✅ 0352 optional_answered    field=repairHomeConsole [0352_PASS_optional_answered.json]
+{'status': 'error', 'error': {'cleaningTier': 'cleaningTier cannot be ansered'}}
+✅ 0353 optional_answered    field=cleaningTier [0353_PASS_optional_answered.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0354 normal               field=- [0354_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': ['repFan', 'repSoftware', 'repJoystickDrift', 'repScreen', 'repButtonFlex', 'repChargePort'], 'repairController': ['repTrigger', 'repShell', 'repSync', 'repBattery']}
+✅ 0355 normal               field=- [0355_PASS_normal.json]
+{'status': 'error', 'error': {'repairTablet': 'repairTablet does not contain a valid value'}}
+✅ 0356 invalid_multi        field=repairTablet [0356_PASS_invalid_multi.json]
+{'status': 'error', 'error': {'repairPhone': 'repairPhone must be answered'}}
+✅ 0357 required_empty       field=repairPhone [0357_PASS_required_empty.json]
+{'status': 'error', 'error': {'repairHomeConsole': 'repairHomeConsole does not contain a valid value'}}
+✅ 0358 invalid_multi        field=repairHomeConsole [0358_PASS_invalid_multi.json]
+{'status': 'error', 'error': {'deviceProduct': 'deviceProduct is not required when should be'}}
+✅ 0359 required_false       field=deviceProduct [0359_PASS_required_false.json]
+{'status': 'error', 'error': {'deviceProduct': 'deviceProduct is not required when should be'}}
+✅ 0360 required_false       field=deviceProduct [0360_PASS_required_false.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': ['repSpeakerMic', 'repBattery', 'repScreen', 'repChargePort', 'repDataTransfer', 'repBackGlass', 'repSoftware', 'repCamera'], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': ['repBattery', 'repJoystickDrift', 'repChargePort'], 'repairController': []}
+✅ 0361 normal               field=- [0361_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': ['repDCJack', 'repKeyboardTrackpad', 'repBattery', 'repFan', 'repSSD', 'repRAM', 'repOSReinstall', 'repScreen'], 'repairHomeConsole': ['repFan'], 'repairHandheld': [], 'repairController': ['repShell', 'repSync']}
+✅ 0362 normal               field=- [0362_PASS_normal.json]
+{'status': 'error', 'error': {'contactMethod': 'contactMethod must be answered'}}
+✅ 0363 required_empty       field=contactMethod [0363_PASS_required_empty.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepFullService', 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': []}
+✅ 0364 normal               field=- [0364_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': 'cleanBasic', 'deepCleanType': None, 'repairPhone': ['repScreen', 'repChargePort', 'repSoftware', 'repSpeakerMic', 'repCamera', 'repBattery'], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': ['repBattery']}
+✅ 0365 normal               field=- [0365_PASS_normal.json]
+{'status': 'error', 'error': {'deepCleanType': 'deepCleanType does not contain a valid value'}}
+✅ 0366 invalid_single       field=deepCleanType [0366_PASS_invalid_single.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepFullService', 'repairPhone': [], 'repairTablet': ['repCamera', 'repSoftware', 'repBackGlass', 'repBattery', 'repScreen'], 'repairLaptop': [], 'repairHomeConsole': ['repSoftware'], 'repairHandheld': [], 'repairController': ['repBattery', 'repStickDrift', 'repChargePort']}
+✅ 0367 normal               field=- [0367_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': ['repSoftware', 'repChargePort', 'repBattery', 'repCamera', 'repBackGlass', 'repDataTransfer'], 'repairLaptop': ['repSSD', 'repFan'], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': ['repStickDrift', 'repChargePort', 'repBattery', 'repSync', 'repShell']}
+✅ 0368 normal               field=- [0368_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': ['repDataTransfer', 'repCamera', 'repBackGlass', 'repScreen', 'repSoftware'], 'repairLaptop': ['repFan', 'repKeyboardTrackpad', 'repBattery', 'repSSD', 'repScreen'], 'repairHomeConsole': [], 'repairHandheld': ['repScreen', 'repFan', 'repButtonFlex', 'repChargePort', 'repJoystickDrift'], 'repairController': []}
+✅ 0369 normal               field=- [0369_PASS_normal.json]
+{'status': 'error', 'error': {'serviceType': 'serviceType does not contain a valid value'}}
+✅ 0370 invalid_multi        field=serviceType [0370_PASS_invalid_multi.json]
+{'status': 'error', 'error': {'repairPhone': 'repairPhone does not contain a valid value'}}
+✅ 0371 invalid_multi        field=repairPhone [0371_PASS_invalid_multi.json]
+{'status': 'error', 'error': {'modularAck': 'modularAck does not contain a valid value'}}
+✅ 0372 invalid_single       field=modularAck [0372_PASS_invalid_single.json]
+{'status': 'error', 'error': {'deepCleanType': 'deepCleanType does not contain a valid value'}}
+✅ 0373 invalid_single       field=deepCleanType [0373_PASS_invalid_single.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': ['repSpeakerMic', 'repScreen'], 'repairTablet': ['repDataTransfer', 'repBackGlass', 'repScreen', 'repSpeakerMic', 'repChargePort'], 'repairLaptop': ['repKeyboardTrackpad', 'repScreen'], 'repairHomeConsole': ['repStorage', 'repSoftware'], 'repairHandheld': [], 'repairController': []}
+✅ 0374 normal               field=- [0374_PASS_normal.json]
+{'status': 'error', 'error': {'deviceBrand': 'deviceBrand is not required when should be'}}
+✅ 0375 required_false       field=deviceBrand [0375_PASS_required_false.json]
+{'status': 'error', 'error': {'repairHandheld': 'repairHandheld must be answered'}}
+✅ 0376 required_empty       field=repairHandheld [0376_PASS_required_empty.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepClean', 'repairPhone': ['repBattery', 'repChargePort', 'repButtonFlex', 'repDataTransfer', 'repCamera'], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': ['repChargePort', 'repTrigger', 'repBattery']}
+✅ 0377 normal               field=- [0377_PASS_normal.json]
+{'status': 'error', 'error': {'modularAck': 'modularAck does not contain a valid value'}}
+✅ 0378 invalid_single       field=modularAck [0378_PASS_invalid_single.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': 'cleanBasic', 'deepCleanType': 'deepClean', 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': ['repTrigger', 'repShell', 'repStickDrift']}
+✅ 0379 normal               field=- [0379_PASS_normal.json]
+{'status': 'error', 'error': {'contactName': 'contactName is not required when should be'}}
+✅ 0380 required_false       field=contactName [0380_PASS_required_false.json]
+{'status': 'error', 'error': {'repairHomeConsole': 'repairHomeConsole cannot be ansered'}}
+✅ 0381 optional_answered    field=repairHomeConsole [0381_PASS_optional_answered.json]
+{'status': 'error', 'error': {'serviceType': 'serviceType does not contain a valid value'}}
+✅ 0382 invalid_multi        field=serviceType [0382_PASS_invalid_multi.json]
+{'status': 'error', 'error': {'repairHomeConsole': 'repairHomeConsole does not contain a valid value'}}
+✅ 0383 invalid_multi        field=repairHomeConsole [0383_PASS_invalid_multi.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': 'cleanBasic', 'deepCleanType': 'deepClean', 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': ['repButton', 'repShell', 'repSync', 'repChargePort', 'repBattery']}
+✅ 0384 normal               field=- [0384_PASS_normal.json]
+{'status': 'error', 'error': {'deviceProduct': 'deviceProduct is not required when should be'}}
+✅ 0385 required_false       field=deviceProduct [0385_PASS_required_false.json]
+{'status': 'error', 'error': {'deviceType': 'deviceType is not required when should be'}}
+✅ 0386 required_false       field=deviceType [0386_PASS_required_false.json]
+{'status': 'error', 'error': {'repairPhone': 'repairPhone cannot be ansered'}}
+✅ 0387 optional_answered    field=repairPhone [0387_PASS_optional_answered.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': ['repBattery', 'repChargePort', 'repDataTransfer', 'repCamera', 'repSpeakerMic', 'repSoftware'], 'repairLaptop': [], 'repairHomeConsole': ['repFan', 'repStorage'], 'repairHandheld': [], 'repairController': []}
+✅ 0388 normal               field=- [0388_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepThermalOnly', 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': [], 'repairHandheld': [], 'repairController': ['repButton']}
+✅ 0389 normal               field=- [0389_PASS_normal.json]
+{'status': 'error', 'error': {'contactPhone': 'contactPhone must be answered'}}
+✅ 0390 required_empty       field=contactPhone [0390_PASS_required_empty.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': 'cleanBasic', 'deepCleanType': None, 'repairPhone': [], 'repairTablet': ['repChargePort', 'repCamera', 'repScreen', 'repDataTransfer', 'repBackGlass', 'repBattery'], 'repairLaptop': [], 'repairHomeConsole': ['repStorage'], 'repairHandheld': [], 'repairController': []}
+✅ 0391 normal               field=- [0391_PASS_normal.json]
+{'status': 'error', 'error': {'repairLaptop': 'repairLaptop cannot be ansered'}}
+✅ 0392 optional_answered    field=repairLaptop [0392_PASS_optional_answered.json]
+{'status': 'error', 'error': {'cleaningTier': 'cleaningTier cannot be ansered'}}
+✅ 0393 optional_answered    field=cleaningTier [0393_PASS_optional_answered.json]
+{'status': 'error', 'error': {'deviceProduct': 'deviceProduct must be answered'}}
+✅ 0394 required_empty       field=deviceProduct [0394_PASS_required_empty.json]
+{'status': 'error', 'error': {'contactMethod': 'contactMethod does not contain a valid value'}}
+✅ 0395 invalid_single       field=contactMethod [0395_PASS_invalid_single.json]
+{'status': 'error', 'error': {'deviceProduct': 'deviceProduct is not required when should be'}}
+✅ 0396 required_false       field=deviceProduct [0396_PASS_required_false.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': 'deepClean', 'repairPhone': ['repBattery', 'repChargePort', 'repSpeakerMic', 'repButtonFlex', 'repCamera', 'repSoftware', 'repScreen', 'repDataTransfer'], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': ['repPSU', 'repSoftware', 'repStorage', 'repFan'], 'repairHandheld': ['repScreen', 'repSoftware', 'repChargePort', 'repBattery', 'repCardSlot'], 'repairController': []}
+✅ 0397 normal               field=- [0397_PASS_normal.json]
+{'status': 'ok', 'error': {}}
+here is some realevant data: {'cleaningTier': None, 'deepCleanType': None, 'repairPhone': [], 'repairTablet': [], 'repairLaptop': [], 'repairHomeConsole': ['repPSU', 'repStorage', 'repFan'], 'repairHandheld': [], 'repairController': []}
+✅ 0398 normal               field=- [0398_PASS_normal.json]
+{'status': 'error', 'error': {'deviceBrand': 'deviceBrand must be answered'}}
+✅ 0399 required_empty       field=deviceBrand [0399_PASS_required_empty.json]
+{'status': 'error', 'error': {'contactMethod': 'contactMethod is not required when should be'}}
+✅ 0400 required_false       field=contactMethod [0400_PASS_required_false.json]
+
+--- Summary ---
+Passed:  400/400
+Failed:  0/400
+Normal:  187
+Invalid: 213
+
+PASS: every generated case stayed on the custom validation response path.

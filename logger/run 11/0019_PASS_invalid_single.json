@@ -1,0 +1,162 @@
+{
+  "index": 19,
+  "kind": "invalid_single",
+  "field": "deepCleanType",
+  "expected_status": "error",
+  "passed": true,
+  "reason": "",
+  "response": {
+    "status": "error",
+    "error": {
+      "deepCleanType": "deepCleanType does not contain a valid value"
+    }
+  },
+  "payload": {
+    "modularAck": {
+      "question": "Modular / replaceable parts only",
+      "type": "single",
+      "value": "swapUnsure",
+      "required": true
+    },
+    "contactName": {
+      "question": "First and last name",
+      "type": "text",
+      "value": "o1 R",
+      "required": true
+    },
+    "contactMethod": {
+      "question": "Preferred contact method",
+      "type": "single",
+      "value": "methodPhone",
+      "required": true
+    },
+    "contactPhone": {
+      "question": "Phone number",
+      "type": "text",
+      "value": "Acme Repair",
+      "required": true
+    },
+    "contactEmail": {
+      "question": "Email",
+      "type": "text",
+      "value": "John Doe",
+      "required": true
+    },
+    "deviceType": {
+      "question": "What type of device do you have",
+      "type": "single",
+      "value": "typeHomeConsole",
+      "required": true
+    },
+    "deviceBrand": {
+      "question": "What is the brand of your device",
+      "type": "text",
+      "value": "Apple",
+      "required": true
+    },
+    "deviceProduct": {
+      "question": "Product name",
+      "type": "text",
+      "value": "Nintendo Switch",
+      "required": true
+    },
+    "deviceModel": {
+      "question": "What is the model number of your device (optional)",
+      "type": "text",
+      "value": null,
+      "required": false
+    },
+    "deviceCondition": {
+      "question": "Condition (optional)",
+      "type": "single",
+      "value": null,
+      "required": false
+    },
+    "serviceType": {
+      "question": "Service",
+      "type": "multi",
+      "value": [
+        "svcRepair",
+        "svcCleaning"
+      ],
+      "required": true
+    },
+    "cleaningTier": {
+      "question": "What type of cleaning",
+      "type": "single",
+      "value": null,
+      "required": false
+    },
+    "deepCleanType": {
+      "question": "What type of deep clean",
+      "type": "single",
+      "value": "__INVALID_RANDOM_VALUE__",
+      "required": true
+    },
+    "repairPhone": {
+      "question": "Phone repair services",
+      "type": "multi",
+      "value": [],
+      "required": false
+    },
+    "repairTablet": {
+      "question": "Tablet repair services",
+      "type": "multi",
+      "value": [
+        "repDataTransfer",
+        "repScreen",
+        "repChargePort",
+        "repBattery",
+        "repBackGlass",
+        "repCamera",
+        "repSpeakerMic"
+      ],
+      "required": true
+    },
+    "repairLaptop": {
+      "question": "Laptop repair services",
+      "type": "multi",
+      "value": [],
+      "required": false
+    },
+    "repairHomeConsole": {
+      "question": "Home console repair services",
+      "type": "multi",
+      "value": [
+        "repSoftware",
+        "repFan",
+        "repPSU",
+        "repStorage"
+      ],
+      "required": true
+    },
+    "repairHandheld": {
+      "question": "Handheld console repair services",
+      "type": "multi",
+      "value": [
+        "repJoystickDrift",
+        "repFan",
+        "repButtonFlex",
+        "repScreen",
+        "repSoftware",
+        "repChargePort",
+        "repBattery"
+      ],
+      "required": true
+    },
+    "repairController": {
+      "question": "Controller repair services",
+      "type": "multi",
+      "value": [
+        "repTrigger",
+        "repSync",
+        "repStickDrift",
+        "repBattery",
+        "repButton",
+        "repChargePort",
+        "repShell"
+      ],
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "tests": 1,
+  "seed": null,
+  "valid_ratio": 0.35,
+  "passed": 1,
+  "failed": 0,
+  "normal_cases": 1,
+  "invalid_cases": 0
+}
