@@ -1,4 +1,10 @@
 .venv
-.git
 __pycache__
 *.pyc
+logger/
+test_logs/
+.git
+.gitignore
+weird.txt
+.python-version
+ 
