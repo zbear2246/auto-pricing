@@ -18,8 +18,6 @@ class PricingLookup:
             field_id: str = Form.model_fields[field_name].alias
             
             
-            
-            
             match field_id:
                 case "cleaningTier":
                     realevant_data["cleaningTier"] = field.value if field.value == "cleanBasic" else None
